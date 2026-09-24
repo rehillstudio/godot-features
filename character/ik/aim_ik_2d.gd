@@ -5,6 +5,7 @@ extends Node
 ## задняя рука держит оружие за точку SupportGrip. Учитывает отдачу.
 
 @export var torso_bone: NodePath
+## Необязательная кость шеи между торсом и головой.
 @export var neck_bone: NodePath
 @export var head_bone: NodePath
 @export var arm_ik_front: NodePath
@@ -14,7 +15,7 @@ extends Node
 ## Оружие (Node2D) с дочерними Marker2D «Muzzle» и «SupportGrip».
 @export var weapon: NodePath
 ## Доля угла прицеливания, которую берёт на себя торс.
-@export_range(0.0, 1.0) var torso_share := 0.22
+@export_range(0.0, 1.0) var torso_share := 0.3
 @export_range(0.0, 1.0) var neck_share := 0.12
 @export var head_max_deg := 70.0
 @export var aim_max_deg := 85.0
@@ -44,7 +45,7 @@ var _arms_w := 1.0
 
 func _ready() -> void:
 	_torso = get_node(torso_bone) as Bone2D
-	_neck = get_node(neck_bone) as Bone2D
+	_neck = get_node_or_null(neck_bone) as Bone2D
 	_head = get_node(head_bone) as Bone2D
 	_arm_f = get_node(arm_ik_front) as TwoBoneIK2D
 	_arm_b = get_node(arm_ik_back) as TwoBoneIK2D
@@ -82,7 +83,8 @@ func apply(rig: Node2D) -> void:
 	var angle_recoil := angle - deg_to_rad(recoil_kick_deg) * _recoil
 	# Торс и шея доворачиваются частично.
 	_torso.rotation += angle_recoil * torso_share * weight
-	_neck.rotation += angle_recoil * neck_share * weight
+	if _neck != null:
+		_neck.rotation += angle_recoil * neck_share * weight
 	# Голова смотрит на цель (её «лицо» — локальный +X).
 	var head_angle := clampf(angle, -deg_to_rad(head_max_deg), deg_to_rad(head_max_deg))
 	var head_dir := visual.global_transform.basis_xform(Vector2.RIGHT.rotated(head_angle)).normalized()

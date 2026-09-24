@@ -82,7 +82,7 @@ tests/screenshots.gd        снимки поз (нужен рендер, нап
 
 ```
 Hips
-├─ Torso ─ Neck ─ Head
+├─ Torso ─ Head
 │  ├─ UpperArm_F ─ Forearm_F ─ Hand_F  (передняя рука; на кисти Pistol и PunchHitbox)
 │  └─ UpperArm_B ─ Forearm_B ─ Hand_B  (задняя рука)
 ├─ Thigh_F ─ Shin_F ─ Foot_F           (передняя нога)

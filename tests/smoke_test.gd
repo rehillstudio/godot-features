@@ -94,7 +94,7 @@ func _run() -> void:
 	_check(rig.pistol.visible and not rig.holster.visible, "пистолет в руке, кобура скрыта")
 	var aim_dir: Vector2 = rig.get_aim_direction()
 	_check(aim_dir.x > 0.5 and aim_dir.y < -0.2, "ствол направлен к курсору (%.2f, %.2f)" % [aim_dir.x, aim_dir.y])
-	var head := rig.skeleton.get_node("Hips/Torso/Neck/Head") as Bone2D
+	var head := rig.skeleton.get_node("Hips/Torso/Head") as Bone2D
 	_check(absf(head.rotation_degrees) > 5.0, "голова повернулась к цели (%.1f°)" % head.rotation_degrees)
 	var ammo0 := _player.ammo
 	Input.action_press(&"shoot")

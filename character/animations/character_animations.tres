@@ -20,7 +20,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -32,7 +32,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -44,7 +44,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -56,7 +56,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -68,7 +68,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -80,7 +80,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -92,7 +92,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -104,7 +104,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -116,7 +116,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -128,7 +128,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -140,7 +140,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -152,7 +152,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -164,7 +164,7 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
@@ -176,34 +176,22 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0]
+"values": [Vector2(0, -76)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, -76)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -230,190 +218,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0.5, 0]
+"values": [0, -1, 0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, -1, 0]
+"values": [8, 6, 8]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [8, 6, 8]
+"values": [-8, -11, -8]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-8, -11, -8]
+"values": [0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-8, -6, -8]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-8, -6, -8]
+"values": [-8, -11, -8]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-8, -11, -8]
+"values": [0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-7, -7, -7]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-7, -7, -7]
+"values": [4, 5, 4]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [4, 5, 4]
+"values": [-1, -1, -1]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-1, -1, -1]
+"values": [7, 7, 7]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [7, 7, 7]
+"values": [2, 3, 2]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [2, 3, 2]
+"values": [0, 0, 0]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [Vector2(0, -76), Vector2(0, -77), Vector2(0, -76)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 1, 2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -76), Vector2(0, -77), Vector2(0, -76)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
@@ -440,190 +416,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, 0, 0, 0, 0]
+"values": [-3, -2, -3, -2, -3]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-3, -2, -3, -2, -3]
+"values": [18, 4, -22, -6, 18]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [18, 4, -22, -6, 18]
+"values": [-14, -18, -32, -26, -14]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-14, -18, -32, -26, -14]
+"values": [0, 0, 0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, 0, 0, 0, 0]
+"values": [-22, -6, 18, 4, -22]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-22, -6, 18, 4, -22]
+"values": [-32, -26, -14, -18, -32]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-32, -26, -14, -18, -32]
+"values": [0, 0, 0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, 0, 0, 0, 0]
+"values": [-28, -2, 22, -8, -28]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-28, -2, 22, -8, -28]
+"values": [8, 6, 18, 58, 8]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [8, 6, 18, 58, 8]
+"values": [-12, 2, 16, 12, -12]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-12, 2, 16, 12, -12]
+"values": [22, -8, -28, -2, 22]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [22, -8, -28, -2, 22]
+"values": [18, 58, 8, 6, 18]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [18, 58, 8, 6, 18]
+"values": [16, 12, -12, 2, 16]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [16, 12, -12, 2, 16]
+"values": [Vector2(0, -75), Vector2(0, -78), Vector2(0, -75), Vector2(0, -78), Vector2(0, -75)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -75), Vector2(0, -78), Vector2(0, -75), Vector2(0, -78), Vector2(0, -75)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
@@ -650,190 +614,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [2, 2, 2, 2, 2]
+"values": [-8, -7, -8, -7, -8]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-8, -7, -8, -7, -8]
+"values": [38, 6, -42, -10, 38]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [38, 6, -42, -10, 38]
+"values": [-60, -70, -85, -80, -60]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-60, -70, -85, -80, -60]
+"values": [0, 0, 0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, 0, 0, 0, 0]
+"values": [-42, -10, 38, 6, -42]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-42, -10, 38, 6, -42]
+"values": [-85, -80, -60, -70, -85]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-85, -80, -60, -70, -85]
+"values": [0, 0, 0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, 0, 0, 0, 0]
+"values": [-42, 4, 32, -22, -42]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-42, 4, 32, -22, -42]
+"values": [22, 12, 45, 95, 22]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [22, 12, 45, 95, 22]
+"values": [-8, 6, 28, 22, -8]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-8, 6, 28, 22, -8]
+"values": [32, -22, -42, 4, 32]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [32, -22, -42, 4, 32]
+"values": [45, 95, 22, 12, 45]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [45, 95, 22, 12, 45]
+"values": [28, 22, -8, 6, 28]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [28, 22, -8, 6, 28]
+"values": [Vector2(0, -74), Vector2(0, -80), Vector2(0, -74), Vector2(0, -80), Vector2(0, -74)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -74), Vector2(0, -80), Vector2(0, -74), Vector2(0, -80), Vector2(0, -74)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.3, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
@@ -860,190 +812,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-4, -4, -4]
+"values": [-14, -15, -14]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-14, -15, -14]
+"values": [-30, -32, -30]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-30, -32, -30]
+"values": [-55, -58, -55]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-55, -58, -55]
+"values": [0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-22, -22, -22]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-22, -22, -22]
+"values": [-60, -60, -60]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-60, -60, -60]
+"values": [0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-62, -62, -62]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-62, -62, -62]
+"values": [118, 118, 118]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [118, 118, 118]
+"values": [-50, -50, -50]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-50, -50, -50]
+"values": [-55, -55, -55]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-55, -55, -55]
+"values": [110, 110, 110]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [110, 110, 110]
+"values": [-50, -50, -50]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-50, -50, -50]
+"values": [Vector2(0, -44), Vector2(0, -45), Vector2(0, -44)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 1, 2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -44), Vector2(0, -45), Vector2(0, -44)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
@@ -1070,190 +1010,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-4, -4, -4, -4, -4]
+"values": [-14, -14, -14, -14, -14]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-14, -14, -14, -14, -14]
+"values": [-28, -30, -30, -30, -28]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-28, -30, -30, -30, -28]
+"values": [-50, -55, -60, -55, -50]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-50, -55, -60, -55, -50]
+"values": [0, 0, 0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, 0, 0, 0, 0]
+"values": [-30, -22, -28, -22, -30]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-30, -22, -28, -22, -30]
+"values": [-60, -60, -50, -60, -60]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-60, -60, -50, -60, -60]
+"values": [0, 0, 0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, 0, 0, 0, 0]
+"values": [-75, -55, -30, -45, -75]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-75, -55, -30, -45, -75]
+"values": [100, 112, 120, 128, 100]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [100, 112, 120, 128, 100]
+"values": [-30, -50, -60, -70, -30]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-30, -50, -60, -70, -30]
+"values": [-30, -45, -75, -55, -30]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-30, -45, -75, -55, -30]
+"values": [120, 128, 100, 112, 120]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [120, 128, 100, 112, 120]
+"values": [-60, -70, -30, -50, -60]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [-60, -70, -30, -50, -60]
+"values": [Vector2(0, -44), Vector2(0, -46), Vector2(0, -44), Vector2(0, -46), Vector2(0, -44)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -44), Vector2(0, -46), Vector2(0, -44), Vector2(0, -46), Vector2(0, -44)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
@@ -1280,190 +1208,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-8, 2, 0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-8, 2, 0]
+"values": [20, -150, -100]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [20, -150, -100]
+"values": [-20, -20, -45]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-20, -20, -45]
+"values": [0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [20, -140, -95]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [20, -140, -95]
+"values": [-20, -25, -50]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-20, -25, -50]
+"values": [0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-30, 8, -40]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-30, 8, -40]
+"values": [45, 4, 62]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [45, 4, 62]
+"values": [-10, 20, 10]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-10, 20, 10]
+"values": [-25, 4, -15]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-25, 4, -15]
+"values": [40, 4, 40]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [40, 4, 40]
+"values": [-10, 20, 15]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-10, 20, 15]
+"values": [Vector2(0, -66), Vector2(0, -78), Vector2(0, -76)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.15, 0.45),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -66), Vector2(0, -78), Vector2(0, -76)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.15, 0.45),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
@@ -1490,190 +1406,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-2, -2, -2]
+"values": [4, 6, 4]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [4, 6, 4]
+"values": [-135, -150, -135]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-135, -150, -135]
+"values": [-30, -25, -30]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-30, -25, -30]
+"values": [0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-125, -140, -125]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-125, -140, -125]
+"values": [-35, -30, -35]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-35, -30, -35]
+"values": [0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-22, -14, -22]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-22, -14, -22]
+"values": [40, 34, 40]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [40, 34, 40]
+"values": [15, 12, 15]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [15, 12, 15]
+"values": [8, 14, 8]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [8, 14, 8]
+"values": [28, 22, 28]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [28, 22, 28]
+"values": [20, 18, 20]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [20, 18, 20]
+"values": [Vector2(0, -76), Vector2(0, -77), Vector2(0, -76)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -76), Vector2(0, -77), Vector2(0, -76)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
@@ -1700,190 +1604,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-4, 0]
+"values": [-10, 0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-10, 0]
+"values": [-40, 8]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-40, 8]
+"values": [-30, -8]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-30, -8]
+"values": [0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0, 0]
+"values": [-35, -8]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-35, -8]
+"values": [-30, -8]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-30, -8]
+"values": [0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0, 0]
+"values": [-45, -7]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-45, -7]
+"values": [72, 4]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [72, 4]
+"values": [-20, -1]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-20, -1]
+"values": [-40, 7]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-40, 7]
+"values": [68, 2]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [68, 2]
+"values": [-20, 0]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-20, 0]
+"values": [Vector2(0, -58), Vector2(0, -76)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, -58), Vector2(0, -76)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.35),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -1910,190 +1802,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [5, 12, 12, 0]
+"values": [20, 55, 55, 0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [20, 55, 55, 0]
+"values": [-70, -100, -100, 0]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-70, -100, -100, 0]
+"values": [-90, -130, -130, -10]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-90, -130, -130, -10]
+"values": [0, 0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0, 0, 0, 0]
+"values": [-60, -95, -95, 0]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-60, -95, -95, 0]
+"values": [-90, -125, -125, -10]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-90, -125, -125, -10]
+"values": [0, 0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0, 0, 0, 0]
+"values": [-60, -115, -115, -25]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-60, -115, -115, -25]
+"values": [80, 140, 140, 35]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [80, 140, 140, 35]
+"values": [0, 25, 25, 0]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0, 25, 25, 0]
+"values": [-50, -110, -110, -20]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-50, -110, -110, -20]
+"values": [70, 135, 135, 25]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [70, 135, 135, 25]
+"values": [0, 25, 25, 0]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0, 25, 25, 0]
+"values": [Vector2(0, -68), Vector2(0, -66), Vector2(0, -66), Vector2(0, -72)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -68), Vector2(0, -66), Vector2(0, -66), Vector2(0, -72)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.45, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
@@ -2120,190 +2000,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-4, -4, -4]
+"values": [-10, -10, -10]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-10, -10, -10]
+"values": [45, 45, 45]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [45, 45, 45]
+"values": [-30, -30, -30]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-30, -30, -30]
+"values": [0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-20, -20, -20]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-20, -20, -20]
+"values": [-40, -40, -40]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-40, -40, -40]
+"values": [0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-45, -45, -45]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-45, -45, -45]
+"values": [35, 35, 35]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [35, 35, 35]
+"values": [5, 5, 5]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [5, 5, 5]
+"values": [-60, -60, -60]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-60, -60, -60]
+"values": [55, 55, 55]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [55, 55, 55]
+"values": [5, 5, 5]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [5, 5, 5]
+"values": [Vector2(0, -58), Vector2(0, -59), Vector2(0, -58)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -58), Vector2(0, -59), Vector2(0, -58)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
@@ -2330,190 +2198,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-6, -6, -6]
+"values": [-12, -12, -12]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-12, -12, -12]
+"values": [-172, -172, -172]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-172, -172, -172]
+"values": [-4, -4, -4]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-4, -4, -4]
+"values": [-6, -6, -6]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-6, -6, -6]
+"values": [-168, -168, -168]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-168, -168, -168]
+"values": [-8, -8, -8]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-8, -8, -8]
+"values": [-6, -6, -6]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-6, -6, -6]
+"values": [4, 8, 4]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [4, 8, 4]
+"values": [12, 14, 12]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [12, 14, 12]
+"values": [20, 20, 20]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [20, 20, 20]
+"values": [-6, -2, -6]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-6, -2, -6]
+"values": [16, 20, 16]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [16, 20, 16]
+"values": [20, 20, 20]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [20, 20, 20]
+"values": [Vector2(0, -76), Vector2(0, -77), Vector2(0, -76)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.8, 1.6),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -76), Vector2(0, -77), Vector2(0, -76)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.8, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
@@ -2540,190 +2396,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-6, 0, 0, 0]
+"values": [-12, -20, -10, -2]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-12, -20, -10, -2]
+"values": [-172, -120, -30, 8]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-172, -120, -30, 8]
+"values": [-4, -40, -30, -8]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-4, -40, -30, -8]
+"values": [-6, 0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-6, 0, 0, 0]
+"values": [-168, -110, -25, -8]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-168, -110, -25, -8]
+"values": [-8, -45, -30, -8]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-8, -45, -30, -8]
+"values": [-6, 0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-6, 0, 0, 0]
+"values": [4, -95, -70, -7]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [4, -95, -70, -7]
+"values": [12, 110, 100, 4]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [12, 110, 100, 4]
+"values": [20, 10, -30, -1]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [20, 10, -30, -1]
+"values": [-6, -20, -60, 7]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-6, -20, -60, 7]
+"values": [16, 60, 90, 2]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [16, 60, 90, 2]
+"values": [20, 20, -20, 0]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [20, 20, -20, 0]
+"values": [Vector2(0, -76), Vector2(0, -70), Vector2(0, -56), Vector2(0, -74)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -76), Vector2(0, -70), Vector2(0, -56), Vector2(0, -74)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.55, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
@@ -2750,190 +2594,178 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [5, -4, 0]
+"values": [-35, -15, 0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-35, -15, 0]
+"values": [-60, -30, 8]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-60, -30, 8]
+"values": [-40, -55, -8]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-40, -55, -8]
+"values": [0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-55, -22, -8]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-55, -22, -8]
+"values": [-45, -60, -8]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-45, -60, -8]
+"values": [0, 0, 0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
+tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-80, -62, -7]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F:rotation_degrees")
+tracks/9/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
 tracks/9/interp = 2
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-80, -62, -7]
+"values": [110, 118, 4]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F:rotation_degrees")
+tracks/10/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
 tracks/10/interp = 2
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [110, 118, 4]
+"values": [-30, -50, -1]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F:rotation_degrees")
+tracks/11/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
 tracks/11/interp = 2
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-30, -50, -1]
+"values": [-60, -55, 7]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B:rotation_degrees")
+tracks/12/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
 tracks/12/interp = 2
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-60, -55, 7]
+"values": [100, 110, 2]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B:rotation_degrees")
+tracks/13/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
 tracks/13/interp = 2
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [100, 110, 2]
+"values": [-30, -50, 0]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B:rotation_degrees")
+tracks/14/path = NodePath("Visual/Skeleton2D/Hips:position")
 tracks/14/interp = 2
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-30, -50, 0]
+"values": [Vector2(0, -40), Vector2(0, -44), Vector2(0, -76)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Visual/Skeleton2D/Hips:position")
-tracks/15/interp = 2
+tracks/15/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
+tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.45, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -40), Vector2(0, -44), Vector2(0, -76)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Visual/Skeleton2D/Hips:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
 "times": PackedFloat32Array(0, 0.45, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
@@ -2960,7 +2792,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -2972,82 +2804,70 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0, 0]
+"values": [-95, -95]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-95, -95]
+"values": [2, 2]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [2, 2]
+"values": [0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0, 0]
+"values": [-75, -75]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-75, -75]
+"values": [-28, -28]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [-28, -28]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -3074,94 +2894,82 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.05, 0.15),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, -2, 0]
+"values": [0, -3, 0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.05, 0.15),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, -3, 0]
+"values": [-95, -95, -95]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.05, 0.15),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-95, -95, -95]
+"values": [2, 2, 2]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.05, 0.15),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [2, 2, 2]
+"values": [0, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.05, 0.15),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0, 0, 0]
+"values": [-75, -75, -75]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.05, 0.15),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [-75, -75, -75]
+"values": [-28, -28, -28]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 0.05, 0.15),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [-28, -28, -28]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.05, 0.15),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
@@ -3188,94 +2996,82 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.45, 0.75, 0.95, 1.15, 1.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, 2, 3, 3, 2, 0, 0]
+"values": [0, 8, 12, 12, 10, 3, 0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.45, 0.75, 0.95, 1.15, 1.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, 8, 12, 12, 10, 3, 0]
+"values": [-95, -110, -112, -112, -108, -100, -95]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.45, 0.75, 0.95, 1.15, 1.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [-95, -110, -112, -112, -108, -100, -95]
+"values": [2, -25, -28, -28, -22, -5, 2]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.45, 0.75, 0.95, 1.15, 1.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [2, -25, -28, -28, -22, -5, 2]
+"values": [0, -10, -12, -12, -8, 0, 0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.45, 0.75, 0.95, 1.15, 1.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0, -10, -12, -12, -8, 0, 0]
+"values": [-75, -40, 10, -60, -70, -78, -75]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.45, 0.75, 0.95, 1.15, 1.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [-75, -40, 10, -60, -70, -78, -75]
+"values": [-28, -60, -70, -95, -100, -50, -28]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 2
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.45, 0.75, 0.95, 1.15, 1.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [-28, -60, -70, -95, -100, -50, -28]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
-tracks/8/interp = 2
-tracks/8/loop_wrap = true
-tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.45, 0.75, 0.95, 1.15, 1.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
@@ -3302,94 +3098,82 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.18, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0, 2, 2, 0]
+"values": [0, -2, -2, 0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.18, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0, -2, -2, 0]
+"values": [-45, -98, -98, -45]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.18, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-45, -98, -98, -45]
+"values": [-125, -4, -4, -125]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.18, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-125, -4, -4, -125]
+"values": [-10, 0, 0, -10]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.18, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-10, 0, 0, -10]
+"values": [-55, -60, -60, -55]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.18, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-55, -60, -60, -55]
+"values": [-130, -125, -125, -130]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.18, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [-130, -125, -125, -130]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.18, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
@@ -3416,94 +3200,82 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees")
+tracks/1/path = NodePath("Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.2, 0.35),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0, 4, 4, 0]
+"values": [0, -4, -4, 0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees")
+tracks/2/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.2, 0.35),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0, -4, -4, 0]
+"values": [-45, -50, -50, -45]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees")
+tracks/3/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.2, 0.35),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-45, -50, -50, -45]
+"values": [-125, -120, -120, -125]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees")
+tracks/4/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.2, 0.35),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-125, -120, -120, -125]
+"values": [-10, -10, -10, -10]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees")
+tracks/5/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.2, 0.35),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-10, -10, -10, -10]
+"values": [-55, -105, -105, -55]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees")
+tracks/6/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.2, 0.35),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [-55, -105, -105, -55]
+"values": [-130, -2, -2, -130]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees")
+tracks/7/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 0.12, 0.2, 0.35),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [-130, -2, -2, -130]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
 "times": PackedFloat32Array(0, 0.12, 0.2, 0.35),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,

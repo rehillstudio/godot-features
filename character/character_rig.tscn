@@ -101,23 +101,23 @@ input_1/reset = true
 
 [sub_resource type="AnimationNodeBlend2" id="Blend2_aim"]
 filter_enabled = true
-filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
+filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
 
 [sub_resource type="AnimationNodeOneShot" id="OneShot_punch"]
 filter_enabled = true
-filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
+filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
 fadein_time = 0.05
 fadeout_time = 0.12
 
 [sub_resource type="AnimationNodeOneShot" id="OneShot_reload"]
 filter_enabled = true
-filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
+filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
 fadein_time = 0.1
 fadeout_time = 0.15
 
 [sub_resource type="AnimationNodeOneShot" id="OneShot_shoot"]
 filter_enabled = true
-filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
+filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
 fadein_time = 0
 fadeout_time = 0.08
 
@@ -317,7 +317,7 @@ length = 40
 bone_angle = -90
 
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso"]
-position = Vector2(0, -17)
+position = Vector2(0, -21)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("14_torso_shirt")
 metadata/part_slot = &"torso"
@@ -330,38 +330,31 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("15_backpack")
 metadata/gear_id = &"backpack"
 
-[node name="Neck" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso"]
-position = Vector2(0, -40)
-rest = Transform2D(1, 0, 0, 1, 0, -40)
-auto_calculate_length_and_angle = false
-length = 8
-bone_angle = -90
-
-[node name="Head" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/Neck"]
-z_index = -1
-position = Vector2(0, -8)
-rest = Transform2D(1, 0, 0, 1, 0, -8)
+[node name="Head" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso"]
+z_index = 1
+position = Vector2(0, -48)
+rest = Transform2D(1, 0, 0, 1, 0, -48)
 auto_calculate_length_and_angle = false
 length = 26
 bone_angle = -90
 
-[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck/Head"]
-position = Vector2(2, -5.5)
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Head"]
+position = Vector2(2, -10)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("16_head")
 metadata/part_slot = &"head"
 
-[node name="Cap" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck/Head"]
+[node name="Cap" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Head"]
 visible = false
-z_index = 2
+z_index = 1
 position = Vector2(5, -22)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("17_cap")
 metadata/gear_id = &"cap"
 
-[node name="Helmet" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck/Head"]
+[node name="Helmet" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Head"]
 visible = false
-z_index = 2
+z_index = 1
 position = Vector2(2, -16)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("18_helmet")
@@ -643,8 +636,7 @@ collision_mask = 24
 [node name="AimIK" type="Node" parent="Modifiers"]
 script = ExtResource("4_aim_ik_2d")
 torso_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso")
-neck_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/Neck")
-head_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/Neck/Head")
+head_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/Head")
 arm_ik_front = NodePath("../ArmIK_F")
 arm_ik_back = NodePath("../ArmIK_B")
 hand_front = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F")
@@ -703,7 +695,7 @@ script = ExtResource("7_ragdoll_body_2d")
 bone = NodePath("Hips/Torso")
 reverse = true
 impulse_scale = 1
-passive_bones = Array[NodePath]([NodePath("Hips/Torso/Neck")])
+passive_bones = Array[NodePath]([])
 
 [node name="Shape" type="CollisionShape2D" parent="Ragdoll/Torso"]
 rotation = 1.5708
@@ -723,7 +715,7 @@ angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
-bone = NodePath("Hips/Torso/Neck/Head")
+bone = NodePath("Hips/Torso/Head")
 reverse = true
 impulse_scale = 0.8
 passive_bones = Array[NodePath]([])
@@ -931,7 +923,7 @@ position = Vector2(0, -130)
 node_a = NodePath("../Torso")
 node_b = NodePath("../Head")
 script = ExtResource("8_ragdoll_joint_2d")
-bone = NodePath("Hips/Torso/Neck/Head")
+bone = NodePath("Hips/Torso/Head")
 limit_lower = -0.6
 limit_upper = 0.6
 rest_angle = 0
