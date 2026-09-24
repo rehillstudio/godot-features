@@ -88,4 +88,4 @@ metadata/gear_id = &"backpack"
 
 [node name="SkinHint" type="Label" parent="Margin/Row/Panel/Box"]
 theme_override_font_sizes/font_size = 16
-text = "6 — следующий скин\nСлоты частей: голова, шея, торс, таз,\nплечо, предплечье, кисть, бедро, голень, стопа"
+text = "6 — следующий скин\nСлоты частей: голова, торс, таз,\nплечо, предплечье, кисть, бедро, голень, стопа"

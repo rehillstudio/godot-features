@@ -14,6 +14,12 @@ signal deactivated
 @export var recover_time := 0.4
 ## Скорость, ниже которой тело считается «успокоившимся».
 @export var settle_speed := 25.0
+## Жёсткость угловых лимитов суставов (ускорение, рад/с² на радиан нарушения).
+@export var limit_stiffness := 400.0
+@export var limit_damping := 14.0
+## Слабая «мышечная» пружина к позе покоя — не даёт рагдоллу сминаться в кашу.
+@export var pose_stiffness := 30.0
+@export var pose_damping := 4.0
 
 var active := false
 var _skeleton: Skeleton2D
@@ -24,6 +30,8 @@ var _bones_of_bodies: Array[Bone2D] = []
 var _recover_t := 1.0e9
 var _recover_rot: Dictionary = {}
 var _recover_root_pos := Vector2.ZERO
+var _mirror := 1.0
+var _inertia: Dictionary = {}
 
 
 func _ready() -> void:
@@ -63,7 +71,7 @@ func activate(velocity: Vector2, impulse: Vector2 = Vector2.ZERO, impulse_origin
 		return
 	active = true
 	_recover_t = 1.0e9
-	var mirror := BoneMath2D.mirror_sign(_skeleton)
+	_mirror = BoneMath2D.mirror_sign(_skeleton)
 	for i in _bodies.size():
 		var body := _bodies[i]
 		var bone := _bones_of_bodies[i]
@@ -84,28 +92,15 @@ func activate(velocity: Vector2, impulse: Vector2 = Vector2.ZERO, impulse_origin
 	for joint in _joints:
 		var bone := _skeleton.get_node(joint.bone) as Bone2D
 		joint.global_position = bone.global_position
-		var a := get_node_or_null(joint.node_a) as RagdollBody2D
-		var b := get_node_or_null(joint.node_b) as RagdollBody2D
-		var lo := joint.base_lower
-		var hi := joint.base_upper
-		if mirror < 0.0:
-			var t := lo
-			lo = -hi
-			hi = -t
-		if a != null and b != null:
-			# Лимиты PinJoint2D отсчитываются от направления между центрами тел в момент
-			# создания, поэтому компенсируем текущий изгиб сустава (примерно половина угла).
-			var rel := BoneMath2D.wrap_angle(b.global_rotation - a.global_rotation)
-			lo -= rel * 0.5
-			hi -= rel * 0.5
-		joint.angular_limit_lower = lo
-		joint.angular_limit_upper = hi
 		var path_a := joint.node_a
 		var path_b := joint.node_b
 		joint.node_a = NodePath()
 		joint.node_b = NodePath()
 		joint.node_a = path_a
 		joint.node_b = path_b
+	_inertia.clear()
+	for body in _bodies:
+		_inertia[body] = maxf(PhysicsServer2D.body_get_param(body.get_rid(), PhysicsServer2D.BODY_PARAM_INERTIA), 1.0)
 	# Импульс.
 	for body in _bodies:
 		var imp := impulse
@@ -116,6 +111,39 @@ func activate(velocity: Vector2, impulse: Vector2 = Vector2.ZERO, impulse_origin
 		body.apply_central_impulse(imp * body.mass * body.impulse_scale)
 		body.apply_torque_impulse(randf_range(-1.0, 1.0) * imp.length() * body.mass * 0.6)
 	activated.emit()
+
+
+func _physics_process(delta: float) -> void:
+	if not active:
+		return
+	for joint in _joints:
+		var a := joint.body_a
+		var b := joint.body_b
+		if a == null or b == null:
+			continue
+		var lo := joint.limit_lower
+		var hi := joint.limit_upper
+		var rest := joint.rest_angle
+		if _mirror < 0.0:
+			var t := lo
+			lo = -hi
+			hi = -t
+			rest = -rest
+		var rel := BoneMath2D.wrap_angle(b.global_rotation - a.global_rotation)
+		var rel_vel := b.angular_velocity - a.angular_velocity
+		var ia: float = _inertia[a]
+		var ib: float = _inertia[b]
+		var i_red := 1.0 / (1.0 / ia + 1.0 / ib)
+		var accel := 0.0
+		if rel < lo:
+			accel = -((rel - lo) * limit_stiffness + rel_vel * limit_damping)
+		elif rel > hi:
+			accel = -((rel - hi) * limit_stiffness + rel_vel * limit_damping)
+		else:
+			accel = -((rel - rest) * pose_stiffness + rel_vel * pose_damping)
+		var impulse := accel * i_red * delta
+		b.apply_torque_impulse(impulse)
+		a.apply_torque_impulse(-impulse)
 
 
 ## Выключает рагдолл, запоминая позу для плавного возврата к анимации.

@@ -53,18 +53,18 @@ color = Color(0.24706, 0.2902, 0.33725, 1)
 polygon = PackedVector2Array(200, 0, 365, -60, 470, -60, 600, 0)
 
 [node name="UpperPlatform" type="CollisionPolygon2D" parent="Terrain"]
-polygon = PackedVector2Array(920, -160, 1200, -160, 1200, 0, 920, 0)
+polygon = PackedVector2Array(1016, -156, 1200, -156, 1200, 0, 1016, 0)
 
 [node name="UpperPlatformVisual" type="Polygon2D" parent="Terrain"]
 color = Color(0.24706, 0.2902, 0.33725, 1)
-polygon = PackedVector2Array(920, -160, 1200, -160, 1200, 0, 920, 0)
+polygon = PackedVector2Array(1016, -156, 1200, -156, 1200, 0, 1016, 0)
 
 [node name="SlopeDown" type="CollisionPolygon2D" parent="Terrain"]
-polygon = PackedVector2Array(1200, -160, 1477, 0, 1200, 0)
+polygon = PackedVector2Array(1200, -156, 1470, 0, 1200, 0)
 
 [node name="SlopeDownVisual" type="Polygon2D" parent="Terrain"]
 color = Color(0.24706, 0.2902, 0.33725, 1)
-polygon = PackedVector2Array(1200, -160, 1477, 0, 1200, 0)
+polygon = PackedVector2Array(1200, -156, 1470, 0, 1200, 0)
 
 [node name="LedgeBlock" type="CollisionPolygon2D" parent="Terrain"]
 polygon = PackedVector2Array(1700, -200, 2200, -200, 2200, 0, 1700, 0)
@@ -106,18 +106,18 @@ collision_layer = 1
 collision_mask = 0
 
 [node name="Ramp" type="CollisionPolygon2D" parent="StairsRamp"]
-polygon = PackedVector2Array(600, 0, 920, -160, 920, 0)
+polygon = PackedVector2Array(600, 0, 1016, -156, 1016, 0)
 
 [node name="StairsSteps" type="StaticBody2D" parent="."]
 collision_layer = 8
 collision_mask = 0
 
 [node name="Steps" type="CollisionPolygon2D" parent="StairsSteps"]
-polygon = PackedVector2Array(600, 0, 600, -20, 640, -20, 640, -40, 680, -40, 680, -60, 720, -60, 720, -80, 760, -80, 760, -100, 800, -100, 800, -120, 840, -120, 840, -140, 880, -140, 880, -160, 920, -160, 920, 0)
+polygon = PackedVector2Array(600, 0, 600, -12, 632, -12, 632, -24, 664, -24, 664, -36, 696, -36, 696, -48, 728, -48, 728, -60, 760, -60, 760, -72, 792, -72, 792, -84, 824, -84, 824, -96, 856, -96, 856, -108, 888, -108, 888, -120, 920, -120, 920, -132, 952, -132, 952, -144, 984, -144, 984, -156, 1016, -156, 1016, 0)
 
 [node name="StepsVisual" type="Polygon2D" parent="StairsSteps"]
 color = Color(0.3098, 0.36471, 0.42745, 1)
-polygon = PackedVector2Array(600, 0, 600, -20, 640, -20, 640, -40, 680, -40, 680, -60, 720, -60, 720, -80, 760, -80, 760, -100, 800, -100, 800, -120, 840, -120, 840, -140, 880, -140, 880, -160, 920, -160, 920, 0)
+polygon = PackedVector2Array(600, 0, 600, -12, 632, -12, 632, -24, 664, -24, 664, -36, 696, -36, 696, -48, 728, -48, 728, -60, 760, -60, 760, -72, 792, -72, 792, -84, 824, -84, 824, -96, 856, -96, 856, -108, 888, -108, 888, -120, 920, -120, 920, -132, 952, -132, 952, -144, 984, -144, 984, -156, 1016, -156, 1016, 0)
 
 [node name="Barrels" type="Node2D" parent="."]
 
@@ -134,7 +134,7 @@ position = Vector2(2590, -16)
 position = Vector2(2522, -48)
 
 [node name="Barrel5" parent="Barrels" instance=ExtResource("3_explosive_barrel")]
-position = Vector2(1050, -176)
+position = Vector2(1100, -172)
 
 [node name="Dummies" type="Node2D" parent="."]
 

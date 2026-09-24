@@ -21,6 +21,8 @@ extends Node2D
 @export var ankle_height := 8.0
 ## Если в анимации стопа поднята выше этого значения — IK на неё не действует (мах ногой).
 @export var lift_fade := 12.0
+## Насколько выносить стопу вперёд на каждый пиксель подъёма на ступеньку (поза «шага»).
+@export var raise_forward := 0.35
 @export var smooth_speed := 16.0
 @export var hips_drop := true
 @export var rotate_feet := true
@@ -74,11 +76,14 @@ func apply(rig: Node2D) -> void:
 		_offsets[i] = lerpf(_offsets[i], desired * wl, k)
 		targets[i] = ankle + Vector2(0.0, _offsets[i])
 		weights[i] = wl
+	var forward := rig.global_transform.basis_xform(Vector2.RIGHT).normalized()
+	for i in 2:
+		if _offsets[i] < 0.0:
+			targets[i] += forward * (-_offsets[i]) * raise_forward
 	# Таз опускается к самой низкой стопе, чтобы нога не «висела» над нижней ступенькой.
 	var drop_target := maxf(maxf(_offsets[0], _offsets[1]), 0.0) if hips_drop else 0.0
 	_drop = lerpf(_drop, drop_target, k)
 	_hips.position.y += _drop
-	var forward := rig.global_transform.basis_xform(Vector2.RIGHT).normalized()
 	var mirror := BoneMath2D.mirror_sign(_hips)
 	for i in 2:
 		if weights[i] <= 0.001 and _drop <= 0.001:

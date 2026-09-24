@@ -1,28 +1,26 @@
-[gd_resource type="Resource" script_class="CharacterSkin" load_steps=12 format=3 uid="uid://cxq5hjw6gkwii"]
+[gd_resource type="Resource" script_class="CharacterSkin" load_steps=11 format=3 uid="uid://cxq5hjw6gkwii"]
 
 [ext_resource type="Script" uid="uid://bgkoqmh8fvp1v" path="res://character/skins/character_skin.gd" id="1_character_skin"]
 [ext_resource type="Texture2D" path="res://character/parts/head.svg" id="2_head"]
-[ext_resource type="Texture2D" path="res://character/parts/neck.svg" id="3_neck"]
-[ext_resource type="Texture2D" path="res://character/parts/torso_shirt.svg" id="4_torso_shirt"]
-[ext_resource type="Texture2D" path="res://character/parts/hips.svg" id="5_hips"]
-[ext_resource type="Texture2D" path="res://character/parts/upper_arm.svg" id="6_upper_arm"]
-[ext_resource type="Texture2D" path="res://character/parts/forearm.svg" id="7_forearm"]
-[ext_resource type="Texture2D" path="res://character/parts/hand.svg" id="8_hand"]
-[ext_resource type="Texture2D" path="res://character/parts/thigh.svg" id="9_thigh"]
-[ext_resource type="Texture2D" path="res://character/parts/shin.svg" id="10_shin"]
-[ext_resource type="Texture2D" path="res://character/parts/foot.svg" id="11_foot"]
+[ext_resource type="Texture2D" path="res://character/parts/torso_shirt.svg" id="3_torso_shirt"]
+[ext_resource type="Texture2D" path="res://character/parts/hips.svg" id="4_hips"]
+[ext_resource type="Texture2D" path="res://character/parts/upper_arm.svg" id="5_upper_arm"]
+[ext_resource type="Texture2D" path="res://character/parts/forearm.svg" id="6_forearm"]
+[ext_resource type="Texture2D" path="res://character/parts/hand.svg" id="7_hand"]
+[ext_resource type="Texture2D" path="res://character/parts/thigh.svg" id="8_thigh"]
+[ext_resource type="Texture2D" path="res://character/parts/shin.svg" id="9_shin"]
+[ext_resource type="Texture2D" path="res://character/parts/foot.svg" id="10_foot"]
 
 [resource]
 script = ExtResource("1_character_skin")
 skin_name = "Обычный"
 head = ExtResource("2_head")
-neck = ExtResource("3_neck")
-torso = ExtResource("4_torso_shirt")
-hips = ExtResource("5_hips")
-upper_arm = ExtResource("6_upper_arm")
-forearm = ExtResource("7_forearm")
-hand = ExtResource("8_hand")
-thigh = ExtResource("9_thigh")
-shin = ExtResource("10_shin")
-foot = ExtResource("11_foot")
+torso = ExtResource("3_torso_shirt")
+hips = ExtResource("4_hips")
+upper_arm = ExtResource("5_upper_arm")
+forearm = ExtResource("6_forearm")
+hand = ExtResource("7_hand")
+thigh = ExtResource("8_thigh")
+shin = ExtResource("9_shin")
+foot = ExtResource("10_foot")
 gear = Array[StringName]([])

@@ -7,7 +7,6 @@ extends Resource
 
 @export_group("Слоты частей тела")
 @export var head: Texture2D
-@export var neck: Texture2D
 @export var torso: Texture2D
 @export var hips: Texture2D
 @export var upper_arm: Texture2D

@@ -134,7 +134,7 @@ func _run() -> void:
 	_check(not rig.is_punching(), "удар закончился")
 
 	print("-- IK ног на лестнице")
-	_teleport(Vector2(758.0, -79.0))
+	_teleport(Vector2(760.0, -62.0))
 	await _frames(70)
 	_check(_player.is_on_floor(), "стоит на рампе лестницы")
 	var foot_ik := rig.foot_ik
@@ -143,6 +143,13 @@ func _run() -> void:
 	var foot_f := rig.skeleton.get_node("Hips/Thigh_F/Shin_F/Foot_F") as Bone2D
 	var foot_b := rig.skeleton.get_node("Hips/Thigh_B/Shin_B/Foot_B") as Bone2D
 	_check(absf(foot_f.global_position.y - foot_b.global_position.y) > 4.0, "стопы на разной высоте (%.1f / %.1f)" % [foot_f.global_position.y, foot_b.global_position.y])
+	# Подошвы лежат на ступенях (лучи слоя ik_ground).
+	var space := root.get_world_2d().direct_space_state
+	for foot: Bone2D in [foot_f, foot_b]:
+		var q := PhysicsRayQueryParameters2D.create(foot.global_position + Vector2(0, -40), foot.global_position + Vector2(0, 60), 8)
+		var hit := space.intersect_ray(q)
+		var sole := foot.global_position.y + 8.0
+		_check(not hit.is_empty() and absf(hit.position.y - sole) < 2.5, "подошва на ступени (Δ=%.1f)" % (hit.position.y - sole if hit else 99.0))
 	_player.foot_ik_enabled = false
 	await _frames(40)
 	_check(absf(foot_ik._offsets[0]) < 0.5 and absf(foot_ik._offsets[1]) < 0.5, "IK выключен — смещения обнулились")
@@ -168,6 +175,27 @@ func _run() -> void:
 	_check(rig.hands_ik.weight > 0.9, "IK кистей включён (%.2f)" % rig.hands_ik.weight)
 	var hand := rig.skeleton.get_node("Hips/Torso/UpperArm_F/Forearm_F/Hand_F") as Bone2D
 	_check(hand.global_position.distance_to(Vector2(1700.0, -200.0)) < 40.0, "кисть у угла уступа (%.0f, %.0f)" % [hand.global_position.x, hand.global_position.y])
+	# Спуск с уступа по S.
+	Input.action_press(&"crouch")
+	await _frames(3)
+	Input.action_release(&"crouch")
+	_check(_player.state == Player.State.FALL, "S — отпустил уступ")
+	await _frames(60)
+	_check(_player.is_on_floor() and _player.state != Player.State.LEDGE_HANG, "после спуска стоит на земле, не перехватил уступ снова")
+	# Снова цепляемся и подтягиваемся.
+	_teleport(Vector2(1640.0, 0.0))
+	await _frames(20)
+	Input.action_press(&"move_right")
+	Input.action_press(&"jump")
+	await _frames(3)
+	Input.action_release(&"jump")
+	for i in 90:
+		await physics_frame
+		if _player.state == Player.State.LEDGE_HANG:
+			break
+	Input.action_release(&"move_right")
+	await _frames(10)
+	_check(_player.state == Player.State.LEDGE_HANG, "зацепился повторно")
 	Input.action_press(&"jump")
 	await _frames(3)
 	Input.action_release(&"jump")

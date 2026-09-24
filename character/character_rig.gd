@@ -38,6 +38,8 @@ func _ready() -> void:
 	set_facing(facing)
 	anim_tree.active = true
 	anim_tree.mixer_applied.connect(_on_mixer_applied)
+	# Transition не начинает проигрывать стартовый вход сам — запрашиваем его явно.
+	anim_tree.set("parameters/state/transition_request", anim_tree.get("parameters/state/current_state"))
 	if skin != null:
 		apply_skin()
 
@@ -104,6 +106,11 @@ func is_punching() -> bool:
 func abort_upper() -> void:
 	anim_tree.set("parameters/reload/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_ABORT)
 	anim_tree.set("parameters/punch/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_ABORT)
+
+
+## Прицел полностью сведён (руки уже на цели) — можно стрелять.
+func is_aim_ready() -> bool:
+	return _aim_current > 0.85
 
 
 func get_muzzle_global() -> Vector2:

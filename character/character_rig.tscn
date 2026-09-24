@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://leg3a0cl6qcx"]
+[gd_scene load_steps=67 format=3 uid="uid://leg3a0cl6qcx"]
 
 [ext_resource type="Script" uid="uid://d0nal23u5guge" path="res://character/character_rig.gd" id="1_character_rig"]
 [ext_resource type="Script" uid="uid://bg8slbidtqh2e" path="res://character/ik/two_bone_ik_2d.gd" id="2_two_bone_ik_2d"]
@@ -15,18 +15,17 @@
 [ext_resource type="Texture2D" path="res://character/parts/holster.svg" id="13_holster"]
 [ext_resource type="Texture2D" path="res://character/parts/torso_shirt.svg" id="14_torso_shirt"]
 [ext_resource type="Texture2D" path="res://character/parts/backpack.svg" id="15_backpack"]
-[ext_resource type="Texture2D" path="res://character/parts/neck.svg" id="16_neck"]
-[ext_resource type="Texture2D" path="res://character/parts/head.svg" id="17_head"]
-[ext_resource type="Texture2D" path="res://character/parts/cap.svg" id="18_cap"]
-[ext_resource type="Texture2D" path="res://character/parts/helmet.svg" id="19_helmet"]
-[ext_resource type="Texture2D" path="res://character/parts/upper_arm.svg" id="20_upper_arm"]
-[ext_resource type="Texture2D" path="res://character/parts/forearm.svg" id="21_forearm"]
-[ext_resource type="Texture2D" path="res://character/parts/elbow_pad.svg" id="22_elbow_pad"]
-[ext_resource type="Texture2D" path="res://character/parts/hand.svg" id="23_hand"]
-[ext_resource type="Texture2D" path="res://character/parts/thigh.svg" id="24_thigh"]
-[ext_resource type="Texture2D" path="res://character/parts/shin.svg" id="25_shin"]
-[ext_resource type="Texture2D" path="res://character/parts/knee_pad.svg" id="26_knee_pad"]
-[ext_resource type="Texture2D" path="res://character/parts/foot.svg" id="27_foot"]
+[ext_resource type="Texture2D" path="res://character/parts/head.svg" id="16_head"]
+[ext_resource type="Texture2D" path="res://character/parts/cap.svg" id="17_cap"]
+[ext_resource type="Texture2D" path="res://character/parts/helmet.svg" id="18_helmet"]
+[ext_resource type="Texture2D" path="res://character/parts/upper_arm.svg" id="19_upper_arm"]
+[ext_resource type="Texture2D" path="res://character/parts/forearm.svg" id="20_forearm"]
+[ext_resource type="Texture2D" path="res://character/parts/elbow_pad.svg" id="21_elbow_pad"]
+[ext_resource type="Texture2D" path="res://character/parts/hand.svg" id="22_hand"]
+[ext_resource type="Texture2D" path="res://character/parts/thigh.svg" id="23_thigh"]
+[ext_resource type="Texture2D" path="res://character/parts/shin.svg" id="24_shin"]
+[ext_resource type="Texture2D" path="res://character/parts/knee_pad.svg" id="25_knee_pad"]
+[ext_resource type="Texture2D" path="res://character/parts/foot.svg" id="26_foot"]
 
 [sub_resource type="AnimationNodeTransition" id="Transition_state"]
 xfade_time = 0.12
@@ -338,13 +337,6 @@ auto_calculate_length_and_angle = false
 length = 8
 bone_angle = -90
 
-[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck"]
-z_index = -1
-position = Vector2(0, -5)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("16_neck")
-metadata/part_slot = &"neck"
-
 [node name="Head" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/Neck"]
 z_index = 1
 position = Vector2(0, -8)
@@ -354,25 +346,25 @@ length = 26
 bone_angle = -90
 
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck/Head"]
-position = Vector2(2, -16)
+position = Vector2(2, -12)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("17_head")
+texture = ExtResource("16_head")
 metadata/part_slot = &"head"
 
 [node name="Cap" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck/Head"]
 visible = false
 z_index = 1
-position = Vector2(5, -28)
+position = Vector2(5, -24)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("18_cap")
+texture = ExtResource("17_cap")
 metadata/gear_id = &"cap"
 
 [node name="Helmet" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck/Head"]
 visible = false
 z_index = 1
-position = Vector2(2, -22)
+position = Vector2(2, -18)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("19_helmet")
+texture = ExtResource("18_helmet")
 metadata/gear_id = &"helmet"
 
 [node name="UpperArm_F" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso"]
@@ -386,7 +378,7 @@ bone_angle = 90
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F"]
 position = Vector2(0, 14)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("20_upper_arm")
+texture = ExtResource("19_upper_arm")
 metadata/part_slot = &"upper_arm"
 
 [node name="Forearm_F" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F"]
@@ -399,7 +391,7 @@ bone_angle = 90
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F"]
 position = Vector2(0, 13)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("21_forearm")
+texture = ExtResource("20_forearm")
 metadata/part_slot = &"forearm"
 
 [node name="ElbowPad" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F"]
@@ -407,7 +399,7 @@ visible = false
 z_index = 1
 position = Vector2(0, 3)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("22_elbow_pad")
+texture = ExtResource("21_elbow_pad")
 metadata/gear_id = &"elbow_pads"
 
 [node name="Hand_F" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F"]
@@ -420,7 +412,7 @@ bone_angle = 90
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F"]
 position = Vector2(0, 6)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("23_hand")
+texture = ExtResource("22_hand")
 metadata/part_slot = &"hand"
 
 [node name="Pistol" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F" instance=ExtResource("11_pistol")]
@@ -441,6 +433,7 @@ monitorable = false
 shape = SubResource("Circle_punch")
 
 [node name="UpperArm_B" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso"]
+modulate = Color(0.78, 0.78, 0.84, 1)
 z_index = -2
 position = Vector2(-2, -36)
 rest = Transform2D(1, 0, 0, 1, -2, -36)
@@ -451,7 +444,7 @@ bone_angle = 90
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B"]
 position = Vector2(0, 14)
 scale = Vector2(0.25, 0.25)
-texture = "20_upper_arm"
+texture = "19_upper_arm"
 metadata/part_slot = &"upper_arm"
 
 [node name="Forearm_B" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B"]
@@ -464,7 +457,7 @@ bone_angle = 90
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B"]
 position = Vector2(0, 13)
 scale = Vector2(0.25, 0.25)
-texture = "21_forearm"
+texture = "20_forearm"
 metadata/part_slot = &"forearm"
 
 [node name="ElbowPad" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B"]
@@ -472,7 +465,7 @@ visible = false
 z_index = 1
 position = Vector2(0, 3)
 scale = Vector2(0.25, 0.25)
-texture = "22_elbow_pad"
+texture = "21_elbow_pad"
 metadata/gear_id = &"elbow_pads"
 
 [node name="Hand_B" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B"]
@@ -485,7 +478,7 @@ bone_angle = 90
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B"]
 position = Vector2(0, 6)
 scale = Vector2(0.25, 0.25)
-texture = "23_hand"
+texture = "22_hand"
 metadata/part_slot = &"hand"
 
 [node name="Thigh_F" type="Bone2D" parent="Visual/Skeleton2D/Hips"]
@@ -499,7 +492,7 @@ bone_angle = 90
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_F"]
 position = Vector2(0, 18)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("24_thigh")
+texture = ExtResource("23_thigh")
 metadata/part_slot = &"thigh"
 
 [node name="Shin_F" type="Bone2D" parent="Visual/Skeleton2D/Hips/Thigh_F"]
@@ -512,7 +505,7 @@ bone_angle = 90
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_F/Shin_F"]
 position = Vector2(0, 16)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("25_shin")
+texture = ExtResource("24_shin")
 metadata/part_slot = &"shin"
 
 [node name="KneePad" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_F/Shin_F"]
@@ -520,7 +513,7 @@ visible = false
 z_index = 1
 position = Vector2(0, 4)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("26_knee_pad")
+texture = ExtResource("25_knee_pad")
 metadata/gear_id = &"knee_pads"
 
 [node name="Foot_F" type="Bone2D" parent="Visual/Skeleton2D/Hips/Thigh_F/Shin_F"]
@@ -533,10 +526,11 @@ bone_angle = 20
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F"]
 position = Vector2(6, 3)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("27_foot")
+texture = ExtResource("26_foot")
 metadata/part_slot = &"foot"
 
 [node name="Thigh_B" type="Bone2D" parent="Visual/Skeleton2D/Hips"]
+modulate = Color(0.78, 0.78, 0.84, 1)
 z_index = -2
 position = Vector2(-2, 0)
 rest = Transform2D(1, 0, 0, 1, -2, 0)
@@ -547,7 +541,7 @@ bone_angle = 90
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_B"]
 position = Vector2(0, 18)
 scale = Vector2(0.25, 0.25)
-texture = "24_thigh"
+texture = "23_thigh"
 metadata/part_slot = &"thigh"
 
 [node name="Shin_B" type="Bone2D" parent="Visual/Skeleton2D/Hips/Thigh_B"]
@@ -560,7 +554,7 @@ bone_angle = 90
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_B/Shin_B"]
 position = Vector2(0, 16)
 scale = Vector2(0.25, 0.25)
-texture = "25_shin"
+texture = "24_shin"
 metadata/part_slot = &"shin"
 
 [node name="KneePad" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_B/Shin_B"]
@@ -568,7 +562,7 @@ visible = false
 z_index = 1
 position = Vector2(0, 4)
 scale = Vector2(0.25, 0.25)
-texture = "26_knee_pad"
+texture = "25_knee_pad"
 metadata/gear_id = &"knee_pads"
 
 [node name="Foot_B" type="Bone2D" parent="Visual/Skeleton2D/Hips/Thigh_B/Shin_B"]
@@ -581,7 +575,7 @@ bone_angle = 20
 [node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B"]
 position = Vector2(6, 3)
 scale = Vector2(0.25, 0.25)
-texture = "27_foot"
+texture = "26_foot"
 metadata/part_slot = &"foot"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -677,8 +671,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 4
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -699,8 +693,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 6
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -721,8 +715,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 2.5
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -743,8 +737,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 1.2
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -765,8 +759,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 1
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -787,8 +781,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 1.2
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -809,8 +803,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 1
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -831,8 +825,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 2.5
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -853,8 +847,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 2
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -875,8 +869,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 2.5
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -897,8 +891,8 @@ collision_layer = 4
 collision_mask = 17
 mass = 2
 gravity_scale = 1
-linear_damp = 0.4
-angular_damp = 2
+linear_damp = 0.5
+angular_damp = 3
 freeze = true
 freeze_mode = 1
 script = ExtResource("7_ragdoll_body_2d")
@@ -915,108 +909,98 @@ shape = SubResource("Capsule_Shin_B")
 position = Vector2(0, -82)
 node_a = NodePath("../Pelvis")
 node_b = NodePath("../Torso")
-angular_limit_enabled = true
-angular_limit_lower = -0.35
-angular_limit_upper = 0.35
-softness = 0.1
 script = ExtResource("8_ragdoll_joint_2d")
 bone = NodePath("Hips/Torso")
+limit_lower = -0.45
+limit_upper = 0.45
+rest_angle = 0
 
 [node name="J_Head" type="PinJoint2D" parent="Ragdoll"]
 position = Vector2(0, -130)
 node_a = NodePath("../Torso")
 node_b = NodePath("../Head")
-angular_limit_enabled = true
-angular_limit_lower = -0.5
-angular_limit_upper = 0.5
-softness = 0.1
 script = ExtResource("8_ragdoll_joint_2d")
 bone = NodePath("Hips/Torso/Neck/Head")
+limit_lower = -0.6
+limit_upper = 0.6
+rest_angle = 0
 
 [node name="J_Shoulder_F" type="PinJoint2D" parent="Ragdoll"]
 position = Vector2(2, -118)
 node_a = NodePath("../Torso")
 node_b = NodePath("../UpperArm_F")
-angular_limit_enabled = true
-angular_limit_lower = -1.5
-angular_limit_upper = 0.6
-softness = 0.1
 script = ExtResource("8_ragdoll_joint_2d")
 bone = NodePath("Hips/Torso/UpperArm_F")
+limit_lower = -3
+limit_upper = 0.9
+rest_angle = -0.3
 
 [node name="J_Elbow_F" type="PinJoint2D" parent="Ragdoll"]
 position = Vector2(2, -90)
 node_a = NodePath("../UpperArm_F")
 node_b = NodePath("../Forearm_F")
-angular_limit_enabled = true
-angular_limit_lower = -1.2
-angular_limit_upper = 0
-softness = 0.1
 script = ExtResource("8_ragdoll_joint_2d")
 bone = NodePath("Hips/Torso/UpperArm_F/Forearm_F")
+limit_lower = -2.4
+limit_upper = 0
+rest_angle = -0.35
 
 [node name="J_Shoulder_B" type="PinJoint2D" parent="Ragdoll"]
 position = Vector2(-2, -118)
 node_a = NodePath("../Torso")
 node_b = NodePath("../UpperArm_B")
-angular_limit_enabled = true
-angular_limit_lower = -1.5
-angular_limit_upper = 0.6
-softness = 0.1
 script = ExtResource("8_ragdoll_joint_2d")
 bone = NodePath("Hips/Torso/UpperArm_B")
+limit_lower = -3
+limit_upper = 0.9
+rest_angle = -0.3
 
 [node name="J_Elbow_B" type="PinJoint2D" parent="Ragdoll"]
 position = Vector2(-2, -90)
 node_a = NodePath("../UpperArm_B")
 node_b = NodePath("../Forearm_B")
-angular_limit_enabled = true
-angular_limit_lower = -1.2
-angular_limit_upper = 0
-softness = 0.1
 script = ExtResource("8_ragdoll_joint_2d")
 bone = NodePath("Hips/Torso/UpperArm_B/Forearm_B")
+limit_lower = -2.4
+limit_upper = 0
+rest_angle = -0.35
 
 [node name="J_Hip_F" type="PinJoint2D" parent="Ragdoll"]
 position = Vector2(2, -76)
 node_a = NodePath("../Pelvis")
 node_b = NodePath("../Thigh_F")
-angular_limit_enabled = true
-angular_limit_lower = -0.9
-angular_limit_upper = 0.35
-softness = 0.1
 script = ExtResource("8_ragdoll_joint_2d")
 bone = NodePath("Hips/Thigh_F")
+limit_lower = -2
+limit_upper = 0.6
+rest_angle = -0.15
 
 [node name="J_Knee_F" type="PinJoint2D" parent="Ragdoll"]
 position = Vector2(2, -40)
 node_a = NodePath("../Thigh_F")
 node_b = NodePath("../Shin_F")
-angular_limit_enabled = true
-angular_limit_lower = 0
-angular_limit_upper = 1.15
-softness = 0.1
 script = ExtResource("8_ragdoll_joint_2d")
 bone = NodePath("Hips/Thigh_F/Shin_F")
+limit_lower = 0
+limit_upper = 2.3
+rest_angle = 0.3
 
 [node name="J_Hip_B" type="PinJoint2D" parent="Ragdoll"]
 position = Vector2(-2, -76)
 node_a = NodePath("../Pelvis")
 node_b = NodePath("../Thigh_B")
-angular_limit_enabled = true
-angular_limit_lower = -0.9
-angular_limit_upper = 0.35
-softness = 0.1
 script = ExtResource("8_ragdoll_joint_2d")
 bone = NodePath("Hips/Thigh_B")
+limit_lower = -2
+limit_upper = 0.6
+rest_angle = -0.15
 
 [node name="J_Knee_B" type="PinJoint2D" parent="Ragdoll"]
 position = Vector2(-2, -40)
 node_a = NodePath("../Thigh_B")
 node_b = NodePath("../Shin_B")
-angular_limit_enabled = true
-angular_limit_lower = 0
-angular_limit_upper = 1.15
-softness = 0.1
 script = ExtResource("8_ragdoll_joint_2d")
 bone = NodePath("Hips/Thigh_B/Shin_B")
+limit_lower = 0
+limit_upper = 2.3
+rest_angle = 0.3

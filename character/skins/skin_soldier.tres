@@ -1,28 +1,26 @@
-[gd_resource type="Resource" script_class="CharacterSkin" load_steps=12 format=3 uid="uid://cw2umtf2o8oat"]
+[gd_resource type="Resource" script_class="CharacterSkin" load_steps=11 format=3 uid="uid://cw2umtf2o8oat"]
 
 [ext_resource type="Script" uid="uid://bgkoqmh8fvp1v" path="res://character/skins/character_skin.gd" id="1_character_skin"]
 [ext_resource type="Texture2D" path="res://character/parts/head_bald.svg" id="2_head_bald"]
-[ext_resource type="Texture2D" path="res://character/parts/neck.svg" id="3_neck"]
-[ext_resource type="Texture2D" path="res://character/parts/torso_vest.svg" id="4_torso_vest"]
-[ext_resource type="Texture2D" path="res://character/parts/hips_camo.svg" id="5_hips_camo"]
-[ext_resource type="Texture2D" path="res://character/parts/upper_arm_armor.svg" id="6_upper_arm_armor"]
-[ext_resource type="Texture2D" path="res://character/parts/forearm_armor.svg" id="7_forearm_armor"]
-[ext_resource type="Texture2D" path="res://character/parts/hand_glove.svg" id="8_hand_glove"]
-[ext_resource type="Texture2D" path="res://character/parts/thigh_armor.svg" id="9_thigh_armor"]
-[ext_resource type="Texture2D" path="res://character/parts/shin_armor.svg" id="10_shin_armor"]
-[ext_resource type="Texture2D" path="res://character/parts/foot.svg" id="11_foot"]
+[ext_resource type="Texture2D" path="res://character/parts/torso_vest.svg" id="3_torso_vest"]
+[ext_resource type="Texture2D" path="res://character/parts/hips_camo.svg" id="4_hips_camo"]
+[ext_resource type="Texture2D" path="res://character/parts/upper_arm_armor.svg" id="5_upper_arm_armor"]
+[ext_resource type="Texture2D" path="res://character/parts/forearm_armor.svg" id="6_forearm_armor"]
+[ext_resource type="Texture2D" path="res://character/parts/hand_glove.svg" id="7_hand_glove"]
+[ext_resource type="Texture2D" path="res://character/parts/thigh_armor.svg" id="8_thigh_armor"]
+[ext_resource type="Texture2D" path="res://character/parts/shin_armor.svg" id="9_shin_armor"]
+[ext_resource type="Texture2D" path="res://character/parts/foot.svg" id="10_foot"]
 
 [resource]
 script = ExtResource("1_character_skin")
 skin_name = "Солдат"
 head = ExtResource("2_head_bald")
-neck = ExtResource("3_neck")
-torso = ExtResource("4_torso_vest")
-hips = ExtResource("5_hips_camo")
-upper_arm = ExtResource("6_upper_arm_armor")
-forearm = ExtResource("7_forearm_armor")
-hand = ExtResource("8_hand_glove")
-thigh = ExtResource("9_thigh_armor")
-shin = ExtResource("10_shin_armor")
-foot = ExtResource("11_foot")
+torso = ExtResource("3_torso_vest")
+hips = ExtResource("4_hips_camo")
+upper_arm = ExtResource("5_upper_arm_armor")
+forearm = ExtResource("6_forearm_armor")
+hand = ExtResource("7_hand_glove")
+thigh = ExtResource("8_thigh_armor")
+shin = ExtResource("9_shin_armor")
+foot = ExtResource("10_foot")
 gear = Array[StringName]([&"helmet", &"knee_pads", &"elbow_pads", &"backpack"])

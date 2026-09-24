@@ -66,6 +66,7 @@ var punch_index := 1
 var punch_timer := -1.0
 var no_control_time := 0.0
 var _ledge_corner := Vector2.ZERO
+var _ledge_cooldown := 0.0
 var _climb_from := Vector2.ZERO
 var _climb_to := Vector2.ZERO
 
@@ -99,6 +100,7 @@ func _unhandled_input(event: InputEvent) -> void:
 func _physics_process(delta: float) -> void:
 	state_time += delta
 	fire_cooldown -= delta
+	_ledge_cooldown -= delta
 	match state:
 		State.RAGDOLL:
 			_process_ragdoll(delta)
@@ -238,7 +240,7 @@ func _process_roll(delta: float) -> void:
 # --- Уступы -------------------------------------------------------------------
 
 func _try_ledge_grab() -> void:
-	if velocity.y < -160.0:
+	if velocity.y < -160.0 or _ledge_cooldown > 0.0:
 		return
 	rays.scale.x = float(facing)
 	wall_ray.force_raycast_update()
@@ -266,7 +268,8 @@ func _process_ledge_hang(_delta: float) -> void:
 		_climb_to = Vector2(_ledge_corner.x + facing * 20.0, _ledge_corner.y)
 		_set_crouched(true)
 		_change_state(State.LEDGE_CLIMB)
-	elif Input.is_action_just_pressed(&"crouch"):
+	elif Input.is_action_just_pressed(&"crouch") or Input.is_action_pressed(&"crouch"):
+		_ledge_cooldown = 0.45
 		global_position.x -= facing * 6.0
 		velocity.y = 60.0
 		_change_state(State.FALL)
@@ -352,7 +355,7 @@ func _update_upper_body(delta: float) -> void:
 		if reload_timer > 0.3 and not rig.is_reloading():
 			reloading = false
 			ammo = magazine_size
-	if aiming and can_upper:
+	if aiming and can_upper and rig.is_aim_ready():
 		if Input.is_action_just_pressed(&"reload") and ammo < magazine_size and not reloading:
 			_reload()
 		elif Input.is_action_pressed(&"shoot") and fire_cooldown <= 0.0 and not reloading and not rig.is_punching():
@@ -377,9 +380,15 @@ func _shoot() -> void:
 	if bullet_scene != null:
 		var bullet := bullet_scene.instantiate() as Node2D
 		get_parent().add_child(bullet)
-		bullet.global_position = rig.get_muzzle_global()
+		var muzzle := rig.get_muzzle_global()
+		bullet.global_position = muzzle
+		# Пуля летит в точку прицеливания; если курсор слишком близко или за спиной — вдоль ствола.
+		var to_target := get_aim_point() - muzzle
+		var dir := rig.get_aim_direction()
+		if to_target.length() > 40.0 and to_target.x * facing > 0.0:
+			dir = to_target.normalized()
 		if bullet.has_method("setup"):
-			bullet.call("setup", rig.get_aim_direction(), self)
+			bullet.call("setup", dir, self)
 	camera.shake(2.0)
 
 
