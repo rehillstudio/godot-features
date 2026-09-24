@@ -1,0 +1,91 @@
+[gd_scene load_steps=6 format=3 uid="uid://dumh4hiy76r2i"]
+
+[ext_resource type="Script" uid="uid://bipmmyaxk8our" path="res://ui/hud.gd" id="1_hud"]
+[ext_resource type="Script" uid="uid://bgkoqmh8fvp1v" path="res://character/skins/character_skin.gd" id="2_character_skin"]
+[ext_resource type="Resource" uid="uid://cxq5hjw6gkwii" path="res://character/skins/skin_default.tres" id="3_skin_default"]
+[ext_resource type="Resource" uid="uid://cw2umtf2o8oat" path="res://character/skins/skin_soldier.tres" id="4_skin_soldier"]
+[ext_resource type="Resource" uid="uid://c1wof1h84w6fc" path="res://character/skins/skin_casual.tres" id="5_skin_casual"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+skins = Array[ExtResource("2_character_skin")]([ExtResource("3_skin_default"), ExtResource("4_skin_soldier"), ExtResource("5_skin_casual")])
+
+[node name="Margin" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1
+anchor_bottom = 1
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Row" type="HBoxContainer" parent="Margin"]
+mouse_filter = 2
+
+[node name="Left" type="VBoxContainer" parent="Margin/Row"]
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="StateLabel" type="Label" parent="Margin/Row/Left"]
+unique_name_in_owner = true
+theme_override_font_sizes/font_size = 24
+text = "Состояние: —"
+
+[node name="AmmoLabel" type="Label" parent="Margin/Row/Left"]
+unique_name_in_owner = true
+theme_override_font_sizes/font_size = 24
+text = "Патроны: —"
+
+[node name="IKLabel" type="Label" parent="Margin/Row/Left"]
+unique_name_in_owner = true
+theme_override_font_sizes/font_size = 24
+text = "IK ног (T): вкл"
+
+[node name="Panel" type="PanelContainer" parent="Margin/Row"]
+size_flags_vertical = 0
+
+[node name="Box" type="VBoxContainer" parent="Margin/Row/Panel"]
+theme_override_constants/separation = 6
+
+[node name="Title" type="Label" parent="Margin/Row/Panel/Box"]
+theme_override_font_sizes/font_size = 24
+text = "Кастомизация"
+
+[node name="SkinOption" type="OptionButton" parent="Margin/Row/Panel/Box"]
+unique_name_in_owner = true
+theme_override_font_sizes/font_size = 20
+
+[node name="GearBox" type="VBoxContainer" parent="Margin/Row/Panel/Box"]
+unique_name_in_owner = true
+
+[node name="Gear_cap" type="CheckButton" parent="Margin/Row/Panel/Box/GearBox"]
+theme_override_font_sizes/font_size = 20
+text = "Кепка (1)"
+metadata/gear_id = &"cap"
+
+[node name="Gear_helmet" type="CheckButton" parent="Margin/Row/Panel/Box/GearBox"]
+theme_override_font_sizes/font_size = 20
+text = "Каска (2)"
+metadata/gear_id = &"helmet"
+
+[node name="Gear_knee_pads" type="CheckButton" parent="Margin/Row/Panel/Box/GearBox"]
+theme_override_font_sizes/font_size = 20
+text = "Наколенники (3)"
+metadata/gear_id = &"knee_pads"
+
+[node name="Gear_elbow_pads" type="CheckButton" parent="Margin/Row/Panel/Box/GearBox"]
+theme_override_font_sizes/font_size = 20
+text = "Налокотники (4)"
+metadata/gear_id = &"elbow_pads"
+
+[node name="Gear_backpack" type="CheckButton" parent="Margin/Row/Panel/Box/GearBox"]
+theme_override_font_sizes/font_size = 20
+text = "Рюкзак (5)"
+metadata/gear_id = &"backpack"
+
+[node name="SkinHint" type="Label" parent="Margin/Row/Panel/Box"]
+theme_override_font_sizes/font_size = 16
+text = "6 — следующий скин\nСлоты частей: голова, шея, торс, таз,\nплечо, предплечье, кисть, бедро, голень, стопа"

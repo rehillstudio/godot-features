@@ -1,0 +1,106 @@
+[gd_scene load_steps=7 format=3 uid="uid://dn0wly4jshpjh"]
+
+[ext_resource type="Script" uid="uid://dfnd4os6sr8gw" path="res://weapons/pistol.gd" id="1_pistol"]
+[ext_resource type="Texture2D" path="res://weapons/pistol.svg" id="2_pistol"]
+[ext_resource type="Texture2D" path="res://weapons/muzzle_flash.svg" id="3_muzzle_flash"]
+
+[sub_resource type="Animation" id="Animation_fire"]
+resource_name = "fire"
+length = 0.12
+step = 0.02
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MuzzleFlash:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.07),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MuzzleFlash:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.07),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.18, 0.18), Vector2(0.3, 0.26)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.04, 0.12),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(-4, -1), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_RESET"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MuzzleFlash:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pistol"]
+_data = {
+&"RESET": SubResource("Animation_RESET"),
+&"fire": SubResource("Animation_fire")
+}
+
+[node name="Pistol" type="Node2D"]
+script = ExtResource("1_pistol")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_pistol")
+centered = false
+offset = Vector2(-36, -48)
+
+[node name="Muzzle" type="Marker2D" parent="."]
+position = Vector2(23, -7)
+
+[node name="SupportGrip" type="Marker2D" parent="."]
+position = Vector2(8, 1)
+
+[node name="MuzzleFlash" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(23, -7)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_muzzle_flash")
+centered = false
+offset = Vector2(0, -32)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries/ = SubResource("AnimationLibrary_pistol")

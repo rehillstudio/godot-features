@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt6nmgk5rup48"]
+
+[ext_resource type="Script" uid="uid://dagw8gw4p6t2k" path="res://weapons/bullet.gd" id="1_bullet"]
+[ext_resource type="PackedScene" uid="uid://cwhvdavl0eioh" path="res://weapons/impact.tscn" id="2_impact"]
+[ext_resource type="Texture2D" path="res://weapons/bullet.svg" id="3_bullet"]
+
+[node name="Bullet" type="Node2D"]
+z_index = 5
+script = ExtResource("1_bullet")
+impact_scene = ExtResource("2_impact")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_bullet")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://t60gpqrctc70"]
+
+[ext_resource type="Script" uid="uid://cvvuhy31odkib" path="res://level/explosive_barrel.gd" id="1_explosive_barrel"]
+[ext_resource type="PackedScene" uid="uid://c3n45qhhp7duv" path="res://level/explosion.tscn" id="2_explosion"]
+[ext_resource type="Texture2D" path="res://level/art/barrel.svg" id="3_barrel"]
+
+[sub_resource type="RectangleShape2D" id="Rect_barrel"]
+size = Vector2(24, 32)
+
+[node name="ExplosiveBarrel" type="RigidBody2D" groups=["explodable"]]
+collision_layer = 16
+collision_mask = 21
+mass = 6
+script = ExtResource("1_explosive_barrel")
+explosion_scene = ExtResource("2_explosion")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_barrel")
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+shape = SubResource("Rect_barrel")

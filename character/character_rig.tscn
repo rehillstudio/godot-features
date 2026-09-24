@@ -1,0 +1,1022 @@
+[gd_scene load_steps=68 format=3 uid="uid://leg3a0cl6qcx"]
+
+[ext_resource type="Script" uid="uid://d0nal23u5guge" path="res://character/character_rig.gd" id="1_character_rig"]
+[ext_resource type="Script" uid="uid://bg8slbidtqh2e" path="res://character/ik/two_bone_ik_2d.gd" id="2_two_bone_ik_2d"]
+[ext_resource type="Script" uid="uid://bpki8hsk0wkj8" path="res://character/ik/foot_ik_2d.gd" id="3_foot_ik_2d"]
+[ext_resource type="Script" uid="uid://0asmf5tjmnn2" path="res://character/ik/aim_ik_2d.gd" id="4_aim_ik_2d"]
+[ext_resource type="Script" uid="uid://ca8lpqwosopl0" path="res://character/ik/hands_ik_2d.gd" id="5_hands_ik_2d"]
+[ext_resource type="Script" uid="uid://dqv18vwfbiyn0" path="res://character/ragdoll/ragdoll_2d.gd" id="6_ragdoll_2d"]
+[ext_resource type="Script" uid="uid://q4qmovepy2nc" path="res://character/ragdoll/ragdoll_body_2d.gd" id="7_ragdoll_body_2d"]
+[ext_resource type="Script" uid="uid://l2842kre4ec6" path="res://character/ragdoll/ragdoll_joint_2d.gd" id="8_ragdoll_joint_2d"]
+[ext_resource type="AnimationLibrary" uid="uid://cewywcd8aajk4" path="res://character/animations/character_animations.tres" id="9_character_animations"]
+[ext_resource type="Resource" uid="uid://cxq5hjw6gkwii" path="res://character/skins/skin_default.tres" id="10_skin_default"]
+[ext_resource type="PackedScene" uid="uid://dn0wly4jshpjh" path="res://weapons/pistol.tscn" id="11_pistol"]
+[ext_resource type="Texture2D" path="res://character/parts/hips.svg" id="12_hips"]
+[ext_resource type="Texture2D" path="res://character/parts/holster.svg" id="13_holster"]
+[ext_resource type="Texture2D" path="res://character/parts/torso_shirt.svg" id="14_torso_shirt"]
+[ext_resource type="Texture2D" path="res://character/parts/backpack.svg" id="15_backpack"]
+[ext_resource type="Texture2D" path="res://character/parts/neck.svg" id="16_neck"]
+[ext_resource type="Texture2D" path="res://character/parts/head.svg" id="17_head"]
+[ext_resource type="Texture2D" path="res://character/parts/cap.svg" id="18_cap"]
+[ext_resource type="Texture2D" path="res://character/parts/helmet.svg" id="19_helmet"]
+[ext_resource type="Texture2D" path="res://character/parts/upper_arm.svg" id="20_upper_arm"]
+[ext_resource type="Texture2D" path="res://character/parts/forearm.svg" id="21_forearm"]
+[ext_resource type="Texture2D" path="res://character/parts/elbow_pad.svg" id="22_elbow_pad"]
+[ext_resource type="Texture2D" path="res://character/parts/hand.svg" id="23_hand"]
+[ext_resource type="Texture2D" path="res://character/parts/thigh.svg" id="24_thigh"]
+[ext_resource type="Texture2D" path="res://character/parts/shin.svg" id="25_shin"]
+[ext_resource type="Texture2D" path="res://character/parts/knee_pad.svg" id="26_knee_pad"]
+[ext_resource type="Texture2D" path="res://character/parts/foot.svg" id="27_foot"]
+
+[sub_resource type="AnimationNodeTransition" id="Transition_state"]
+xfade_time = 0.12
+input_0/name = "idle"
+input_0/auto_advance = false
+input_0/break_loop_at_end = false
+input_0/reset = true
+input_1/name = "walk"
+input_1/auto_advance = false
+input_1/break_loop_at_end = false
+input_1/reset = true
+input_2/name = "run"
+input_2/auto_advance = false
+input_2/break_loop_at_end = false
+input_2/reset = true
+input_3/name = "crouch_idle"
+input_3/auto_advance = false
+input_3/break_loop_at_end = false
+input_3/reset = true
+input_4/name = "crouch_walk"
+input_4/auto_advance = false
+input_4/break_loop_at_end = false
+input_4/reset = true
+input_5/name = "jump"
+input_5/auto_advance = false
+input_5/break_loop_at_end = false
+input_5/reset = true
+input_6/name = "fall"
+input_6/auto_advance = false
+input_6/break_loop_at_end = false
+input_6/reset = true
+input_7/name = "land"
+input_7/auto_advance = false
+input_7/break_loop_at_end = false
+input_7/reset = true
+input_8/name = "roll"
+input_8/auto_advance = false
+input_8/break_loop_at_end = false
+input_8/reset = true
+input_9/name = "slide"
+input_9/auto_advance = false
+input_9/break_loop_at_end = false
+input_9/reset = true
+input_10/name = "ledge_hang"
+input_10/auto_advance = false
+input_10/break_loop_at_end = false
+input_10/reset = true
+input_11/name = "ledge_climb"
+input_11/auto_advance = false
+input_11/break_loop_at_end = false
+input_11/reset = true
+input_12/name = "get_up"
+input_12/auto_advance = false
+input_12/break_loop_at_end = false
+input_12/reset = true
+
+[sub_resource type="AnimationNodeTransition" id="Transition_punch_sel"]
+xfade_time = 0.05
+input_0/name = "jab"
+input_0/auto_advance = false
+input_0/break_loop_at_end = false
+input_0/reset = true
+input_1/name = "cross"
+input_1/auto_advance = false
+input_1/break_loop_at_end = false
+input_1/reset = true
+
+[sub_resource type="AnimationNodeTimeScale" id="TimeScale_walk"]
+
+[sub_resource type="AnimationNodeTimeScale" id="TimeScale_run"]
+
+[sub_resource type="AnimationNodeTimeScale" id="TimeScale_crouch_walk"]
+
+[sub_resource type="AnimationNodeBlend2" id="Blend2_aim"]
+filter_enabled = true
+filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
+
+[sub_resource type="AnimationNodeOneShot" id="OneShot_punch"]
+filter_enabled = true
+filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
+fadein_time = 0.05
+fadeout_time = 0.12
+
+[sub_resource type="AnimationNodeOneShot" id="OneShot_reload"]
+filter_enabled = true
+filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
+fadein_time = 0.1
+fadeout_time = 0.15
+
+[sub_resource type="AnimationNodeOneShot" id="OneShot_shoot"]
+filter_enabled = true
+filters = ["Visual/Skeleton2D/Hips/Torso:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/Neck/Head:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B:rotation_degrees", "Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B:rotation_degrees"]
+fadein_time = 0
+fadeout_time = 0.08
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_idle"]
+animation = &"idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_walk"]
+animation = &"walk"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_run"]
+animation = &"run"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_crouch_idle"]
+animation = &"crouch_idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_crouch_walk"]
+animation = &"crouch_walk"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_jump"]
+animation = &"jump"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_fall"]
+animation = &"fall"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_land"]
+animation = &"land"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_roll"]
+animation = &"roll"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_slide"]
+animation = &"slide"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_ledge_hang"]
+animation = &"ledge_hang"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_ledge_climb"]
+animation = &"ledge_climb"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_get_up"]
+animation = &"get_up"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_aim_pistol"]
+animation = &"aim_pistol"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_punch_jab"]
+animation = &"punch_jab"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_punch_cross"]
+animation = &"punch_cross"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_reload"]
+animation = &"reload"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimNode_shoot"]
+animation = &"shoot"
+
+[sub_resource type="AnimationNodeBlendTree" id="BlendTree_root"]
+nodes/idle_anim/node = SubResource("AnimNode_idle")
+nodes/idle_anim/position = Vector2(200, 60)
+nodes/walk_anim/node = SubResource("AnimNode_walk")
+nodes/walk_anim/position = Vector2(200, 180)
+nodes/run_anim/node = SubResource("AnimNode_run")
+nodes/run_anim/position = Vector2(200, 300)
+nodes/crouch_idle_anim/node = SubResource("AnimNode_crouch_idle")
+nodes/crouch_idle_anim/position = Vector2(200, 420)
+nodes/crouch_walk_anim/node = SubResource("AnimNode_crouch_walk")
+nodes/crouch_walk_anim/position = Vector2(200, 540)
+nodes/jump_anim/node = SubResource("AnimNode_jump")
+nodes/jump_anim/position = Vector2(200, 660)
+nodes/fall_anim/node = SubResource("AnimNode_fall")
+nodes/fall_anim/position = Vector2(200, 780)
+nodes/land_anim/node = SubResource("AnimNode_land")
+nodes/land_anim/position = Vector2(200, 900)
+nodes/roll_anim/node = SubResource("AnimNode_roll")
+nodes/roll_anim/position = Vector2(460, 60)
+nodes/slide_anim/node = SubResource("AnimNode_slide")
+nodes/slide_anim/position = Vector2(460, 180)
+nodes/ledge_hang_anim/node = SubResource("AnimNode_ledge_hang")
+nodes/ledge_hang_anim/position = Vector2(460, 300)
+nodes/ledge_climb_anim/node = SubResource("AnimNode_ledge_climb")
+nodes/ledge_climb_anim/position = Vector2(460, 420)
+nodes/get_up_anim/node = SubResource("AnimNode_get_up")
+nodes/get_up_anim/position = Vector2(460, 540)
+nodes/aim_pistol_anim/node = SubResource("AnimNode_aim_pistol")
+nodes/aim_pistol_anim/position = Vector2(460, 660)
+nodes/punch_jab_anim/node = SubResource("AnimNode_punch_jab")
+nodes/punch_jab_anim/position = Vector2(460, 780)
+nodes/punch_cross_anim/node = SubResource("AnimNode_punch_cross")
+nodes/punch_cross_anim/position = Vector2(460, 900)
+nodes/reload_anim/node = SubResource("AnimNode_reload")
+nodes/reload_anim/position = Vector2(720, 60)
+nodes/shoot_anim/node = SubResource("AnimNode_shoot")
+nodes/shoot_anim/position = Vector2(720, 180)
+nodes/state/node = SubResource("Transition_state")
+nodes/state/position = Vector2(720, 300)
+nodes/punch_sel/node = SubResource("Transition_punch_sel")
+nodes/punch_sel/position = Vector2(720, 420)
+nodes/walk_ts/node = SubResource("TimeScale_walk")
+nodes/walk_ts/position = Vector2(720, 540)
+nodes/run_ts/node = SubResource("TimeScale_run")
+nodes/run_ts/position = Vector2(720, 660)
+nodes/crouch_walk_ts/node = SubResource("TimeScale_crouch_walk")
+nodes/crouch_walk_ts/position = Vector2(720, 780)
+nodes/aim/node = SubResource("Blend2_aim")
+nodes/aim/position = Vector2(720, 900)
+nodes/punch/node = SubResource("OneShot_punch")
+nodes/punch/position = Vector2(980, 60)
+nodes/reload/node = SubResource("OneShot_reload")
+nodes/reload/position = Vector2(980, 180)
+nodes/shoot/node = SubResource("OneShot_shoot")
+nodes/shoot/position = Vector2(980, 300)
+nodes/output/position = Vector2(1400, 400)
+node_connections = [&"walk_ts", 0, &"walk_anim", &"run_ts", 0, &"run_anim", &"crouch_walk_ts", 0, &"crouch_walk_anim", &"state", 0, &"idle_anim", &"state", 1, &"walk_ts", &"state", 2, &"run_ts", &"state", 3, &"crouch_idle_anim", &"state", 4, &"crouch_walk_ts", &"state", 5, &"jump_anim", &"state", 6, &"fall_anim", &"state", 7, &"land_anim", &"state", 8, &"roll_anim", &"state", 9, &"slide_anim", &"state", 10, &"ledge_hang_anim", &"state", 11, &"ledge_climb_anim", &"state", 12, &"get_up_anim", &"aim", 0, &"state", &"aim", 1, &"aim_pistol_anim", &"punch_sel", 0, &"punch_jab_anim", &"punch_sel", 1, &"punch_cross_anim", &"punch", 0, &"aim", &"punch", 1, &"punch_sel", &"reload", 0, &"punch", &"reload", 1, &"reload_anim", &"shoot", 0, &"reload", &"shoot", 1, &"shoot_anim", &"output", 0, &"shoot"]
+
+[sub_resource type="CircleShape2D" id="Circle_punch"]
+radius = 13
+
+[sub_resource type="CapsuleShape2D" id="Capsule_Pelvis"]
+radius = 9
+height = 32.8
+
+[sub_resource type="CapsuleShape2D" id="Capsule_Torso"]
+radius = 10
+height = 52
+
+[sub_resource type="CapsuleShape2D" id="Capsule_Head"]
+radius = 13
+height = 43.6
+
+[sub_resource type="CapsuleShape2D" id="Capsule_UpperArm_F"]
+radius = 5
+height = 34
+
+[sub_resource type="CapsuleShape2D" id="Capsule_Forearm_F"]
+radius = 4.5
+height = 41.4
+
+[sub_resource type="CapsuleShape2D" id="Capsule_UpperArm_B"]
+radius = 5
+height = 34
+
+[sub_resource type="CapsuleShape2D" id="Capsule_Forearm_B"]
+radius = 4.5
+height = 41.4
+
+[sub_resource type="CapsuleShape2D" id="Capsule_Thigh_F"]
+radius = 6
+height = 43.2
+
+[sub_resource type="CapsuleShape2D" id="Capsule_Shin_F"]
+radius = 5.5
+height = 46.6
+
+[sub_resource type="CapsuleShape2D" id="Capsule_Thigh_B"]
+radius = 6
+height = 43.2
+
+[sub_resource type="CapsuleShape2D" id="Capsule_Shin_B"]
+radius = 5.5
+height = 46.6
+
+[node name="CharacterRig" type="Node2D"]
+script = ExtResource("1_character_rig")
+skin = ExtResource("10_skin_default")
+
+[node name="Visual" type="Node2D" parent="."]
+
+[node name="Skeleton2D" type="Skeleton2D" parent="Visual"]
+
+[node name="Hips" type="Bone2D" parent="Visual/Skeleton2D"]
+position = Vector2(0, -76)
+rest = Transform2D(1, 0, 0, 1, 0, -76)
+auto_calculate_length_and_angle = false
+length = 6
+bone_angle = -90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips"]
+position = Vector2(0, -6.5)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("12_hips")
+metadata/part_slot = &"hips"
+
+[node name="Holster" type="Sprite2D" parent="Visual/Skeleton2D/Hips"]
+unique_name_in_owner = true
+z_index = 2
+position = Vector2(5, 4)
+rotation = 0.15
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("13_holster")
+
+[node name="Torso" type="Bone2D" parent="Visual/Skeleton2D/Hips"]
+position = Vector2(0, -6)
+rest = Transform2D(1, 0, 0, 1, 0, -6)
+auto_calculate_length_and_angle = false
+length = 40
+bone_angle = -90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso"]
+position = Vector2(0, -17)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("14_torso_shirt")
+metadata/part_slot = &"torso"
+
+[node name="Backpack" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso"]
+visible = false
+z_index = -1
+position = Vector2(-14, -20)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("15_backpack")
+metadata/gear_id = &"backpack"
+
+[node name="Neck" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso"]
+position = Vector2(0, -40)
+rest = Transform2D(1, 0, 0, 1, 0, -40)
+auto_calculate_length_and_angle = false
+length = 8
+bone_angle = -90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck"]
+z_index = -1
+position = Vector2(0, -5)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("16_neck")
+metadata/part_slot = &"neck"
+
+[node name="Head" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/Neck"]
+z_index = 1
+position = Vector2(0, -8)
+rest = Transform2D(1, 0, 0, 1, 0, -8)
+auto_calculate_length_and_angle = false
+length = 26
+bone_angle = -90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck/Head"]
+position = Vector2(2, -16)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("17_head")
+metadata/part_slot = &"head"
+
+[node name="Cap" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck/Head"]
+visible = false
+z_index = 1
+position = Vector2(5, -28)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("18_cap")
+metadata/gear_id = &"cap"
+
+[node name="Helmet" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/Neck/Head"]
+visible = false
+z_index = 1
+position = Vector2(2, -22)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("19_helmet")
+metadata/gear_id = &"helmet"
+
+[node name="UpperArm_F" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso"]
+z_index = 2
+position = Vector2(2, -36)
+rest = Transform2D(1, 0, 0, 1, 2, -36)
+auto_calculate_length_and_angle = false
+length = 28
+bone_angle = 90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F"]
+position = Vector2(0, 14)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("20_upper_arm")
+metadata/part_slot = &"upper_arm"
+
+[node name="Forearm_F" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F"]
+position = Vector2(0, 28)
+rest = Transform2D(1, 0, 0, 1, 0, 28)
+auto_calculate_length_and_angle = false
+length = 26
+bone_angle = 90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F"]
+position = Vector2(0, 13)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("21_forearm")
+metadata/part_slot = &"forearm"
+
+[node name="ElbowPad" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F"]
+visible = false
+z_index = 1
+position = Vector2(0, 3)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("22_elbow_pad")
+metadata/gear_id = &"elbow_pads"
+
+[node name="Hand_F" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F"]
+position = Vector2(0, 26)
+rest = Transform2D(1, 0, 0, 1, 0, 26)
+auto_calculate_length_and_angle = false
+length = 10
+bone_angle = 90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F"]
+position = Vector2(0, 6)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("23_hand")
+metadata/part_slot = &"hand"
+
+[node name="Pistol" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F" instance=ExtResource("11_pistol")]
+unique_name_in_owner = true
+visible = false
+z_index = 1
+position = Vector2(0, 7)
+rotation = 1.5708
+
+[node name="PunchHitbox" type="Area2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F"]
+unique_name_in_owner = true
+position = Vector2(0, 8)
+collision_layer = 0
+collision_mask = 20
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F/PunchHitbox"]
+shape = SubResource("Circle_punch")
+
+[node name="UpperArm_B" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso"]
+z_index = -2
+position = Vector2(-2, -36)
+rest = Transform2D(1, 0, 0, 1, -2, -36)
+auto_calculate_length_and_angle = false
+length = 28
+bone_angle = 90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B"]
+position = Vector2(0, 14)
+scale = Vector2(0.25, 0.25)
+texture = "20_upper_arm"
+metadata/part_slot = &"upper_arm"
+
+[node name="Forearm_B" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B"]
+position = Vector2(0, 28)
+rest = Transform2D(1, 0, 0, 1, 0, 28)
+auto_calculate_length_and_angle = false
+length = 26
+bone_angle = 90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B"]
+position = Vector2(0, 13)
+scale = Vector2(0.25, 0.25)
+texture = "21_forearm"
+metadata/part_slot = &"forearm"
+
+[node name="ElbowPad" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B"]
+visible = false
+z_index = 1
+position = Vector2(0, 3)
+scale = Vector2(0.25, 0.25)
+texture = "22_elbow_pad"
+metadata/gear_id = &"elbow_pads"
+
+[node name="Hand_B" type="Bone2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B"]
+position = Vector2(0, 26)
+rest = Transform2D(1, 0, 0, 1, 0, 26)
+auto_calculate_length_and_angle = false
+length = 10
+bone_angle = 90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B"]
+position = Vector2(0, 6)
+scale = Vector2(0.25, 0.25)
+texture = "23_hand"
+metadata/part_slot = &"hand"
+
+[node name="Thigh_F" type="Bone2D" parent="Visual/Skeleton2D/Hips"]
+z_index = 1
+position = Vector2(2, 0)
+rest = Transform2D(1, 0, 0, 1, 2, 0)
+auto_calculate_length_and_angle = false
+length = 36
+bone_angle = 90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_F"]
+position = Vector2(0, 18)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("24_thigh")
+metadata/part_slot = &"thigh"
+
+[node name="Shin_F" type="Bone2D" parent="Visual/Skeleton2D/Hips/Thigh_F"]
+position = Vector2(0, 36)
+rest = Transform2D(1, 0, 0, 1, 0, 36)
+auto_calculate_length_and_angle = false
+length = 32
+bone_angle = 90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_F/Shin_F"]
+position = Vector2(0, 16)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("25_shin")
+metadata/part_slot = &"shin"
+
+[node name="KneePad" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_F/Shin_F"]
+visible = false
+z_index = 1
+position = Vector2(0, 4)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("26_knee_pad")
+metadata/gear_id = &"knee_pads"
+
+[node name="Foot_F" type="Bone2D" parent="Visual/Skeleton2D/Hips/Thigh_F/Shin_F"]
+position = Vector2(0, 32)
+rest = Transform2D(1, 0, 0, 1, 0, 32)
+auto_calculate_length_and_angle = false
+length = 18
+bone_angle = 20
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F"]
+position = Vector2(6, 3)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("27_foot")
+metadata/part_slot = &"foot"
+
+[node name="Thigh_B" type="Bone2D" parent="Visual/Skeleton2D/Hips"]
+z_index = -2
+position = Vector2(-2, 0)
+rest = Transform2D(1, 0, 0, 1, -2, 0)
+auto_calculate_length_and_angle = false
+length = 36
+bone_angle = 90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_B"]
+position = Vector2(0, 18)
+scale = Vector2(0.25, 0.25)
+texture = "24_thigh"
+metadata/part_slot = &"thigh"
+
+[node name="Shin_B" type="Bone2D" parent="Visual/Skeleton2D/Hips/Thigh_B"]
+position = Vector2(0, 36)
+rest = Transform2D(1, 0, 0, 1, 0, 36)
+auto_calculate_length_and_angle = false
+length = 32
+bone_angle = 90
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_B/Shin_B"]
+position = Vector2(0, 16)
+scale = Vector2(0.25, 0.25)
+texture = "25_shin"
+metadata/part_slot = &"shin"
+
+[node name="KneePad" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_B/Shin_B"]
+visible = false
+z_index = 1
+position = Vector2(0, 4)
+scale = Vector2(0.25, 0.25)
+texture = "26_knee_pad"
+metadata/gear_id = &"knee_pads"
+
+[node name="Foot_B" type="Bone2D" parent="Visual/Skeleton2D/Hips/Thigh_B/Shin_B"]
+position = Vector2(0, 32)
+rest = Transform2D(1, 0, 0, 1, 0, 32)
+auto_calculate_length_and_angle = false
+length = 18
+bone_angle = 20
+
+[node name="Part" type="Sprite2D" parent="Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B"]
+position = Vector2(6, 3)
+scale = Vector2(0.25, 0.25)
+texture = "27_foot"
+metadata/part_slot = &"foot"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries/ = ExtResource("9_character_animations")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("BlendTree_root")
+anim_player = NodePath("../AnimationPlayer")
+parameters/aim/blend_amount = 0
+parameters/state/current_state = "idle"
+parameters/walk_ts/scale = 1
+parameters/run_ts/scale = 1
+parameters/crouch_walk_ts/scale = 1
+
+[node name="Modifiers" type="Node" parent="."]
+
+[node name="LegIK_F" type="Node" parent="Modifiers"]
+script = ExtResource("2_two_bone_ik_2d")
+upper_bone = NodePath("../../Visual/Skeleton2D/Hips/Thigh_F")
+lower_bone = NodePath("../../Visual/Skeleton2D/Hips/Thigh_F/Shin_F")
+end_bone = NodePath("../../Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F")
+bend_direction = 1
+
+[node name="LegIK_B" type="Node" parent="Modifiers"]
+script = ExtResource("2_two_bone_ik_2d")
+upper_bone = NodePath("../../Visual/Skeleton2D/Hips/Thigh_B")
+lower_bone = NodePath("../../Visual/Skeleton2D/Hips/Thigh_B/Shin_B")
+end_bone = NodePath("../../Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B")
+bend_direction = 1
+
+[node name="ArmIK_F" type="Node" parent="Modifiers"]
+script = ExtResource("2_two_bone_ik_2d")
+upper_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_F")
+lower_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F")
+end_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F")
+bend_direction = -1
+
+[node name="ArmIK_B" type="Node" parent="Modifiers"]
+script = ExtResource("2_two_bone_ik_2d")
+upper_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_B")
+lower_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B")
+end_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B")
+bend_direction = -1
+
+[node name="FootIK" type="Node2D" parent="Modifiers"]
+script = ExtResource("3_foot_ik_2d")
+leg_ik_front = NodePath("../LegIK_F")
+leg_ik_back = NodePath("../LegIK_B")
+foot_front = NodePath("../../Visual/Skeleton2D/Hips/Thigh_F/Shin_F/Foot_F")
+foot_back = NodePath("../../Visual/Skeleton2D/Hips/Thigh_B/Shin_B/Foot_B")
+hips_bone = NodePath("../../Visual/Skeleton2D/Hips")
+ray_front = NodePath("Ray_F")
+ray_back = NodePath("Ray_B")
+
+[node name="Ray_F" type="RayCast2D" parent="Modifiers/FootIK"]
+enabled = false
+target_position = Vector2(0, 90)
+collision_mask = 24
+
+[node name="Ray_B" type="RayCast2D" parent="Modifiers/FootIK"]
+enabled = false
+target_position = Vector2(0, 90)
+collision_mask = 24
+
+[node name="AimIK" type="Node" parent="Modifiers"]
+script = ExtResource("4_aim_ik_2d")
+torso_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso")
+neck_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/Neck")
+head_bone = NodePath("../../Visual/Skeleton2D/Hips/Torso/Neck/Head")
+arm_ik_front = NodePath("../ArmIK_F")
+arm_ik_back = NodePath("../ArmIK_B")
+hand_front = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F")
+hand_back = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B")
+weapon = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F/Pistol")
+
+[node name="HandsIK" type="Node" parent="Modifiers"]
+script = ExtResource("5_hands_ik_2d")
+arm_ik_front = NodePath("../ArmIK_F")
+arm_ik_back = NodePath("../ArmIK_B")
+hand_front = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_F/Forearm_F/Hand_F")
+hand_back = NodePath("../../Visual/Skeleton2D/Hips/Torso/UpperArm_B/Forearm_B/Hand_B")
+
+[node name="Ragdoll" type="Node2D" parent="."]
+script = ExtResource("6_ragdoll_2d")
+skeleton = NodePath("../Visual/Skeleton2D")
+root_bone = NodePath("../Visual/Skeleton2D/Hips")
+
+[node name="Pelvis" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(0, -79)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 4
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips")
+reverse = true
+impulse_scale = 1
+passive_bones = Array[NodePath]([])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/Pelvis"]
+rotation = 1.5708
+shape = SubResource("Capsule_Pelvis")
+
+[node name="Torso" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(0, -102)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 6
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips/Torso")
+reverse = true
+impulse_scale = 1
+passive_bones = Array[NodePath]([NodePath("Hips/Torso/Neck")])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/Torso"]
+rotation = 1.5708
+shape = SubResource("Capsule_Torso")
+
+[node name="Head" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(0, -143)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 2.5
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips/Torso/Neck/Head")
+reverse = true
+impulse_scale = 0.8
+passive_bones = Array[NodePath]([])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/Head"]
+rotation = 1.5708
+shape = SubResource("Capsule_Head")
+
+[node name="UpperArm_F" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(2, -104)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 1.2
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips/Torso/UpperArm_F")
+reverse = false
+impulse_scale = 0.5
+passive_bones = Array[NodePath]([])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/UpperArm_F"]
+rotation = 1.5708
+shape = SubResource("Capsule_UpperArm_F")
+
+[node name="Forearm_F" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(2, -77)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 1
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips/Torso/UpperArm_F/Forearm_F")
+reverse = false
+impulse_scale = 0.3
+passive_bones = Array[NodePath]([NodePath("Hips/Torso/UpperArm_F/Forearm_F/Hand_F")])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/Forearm_F"]
+rotation = 1.5708
+shape = SubResource("Capsule_Forearm_F")
+
+[node name="UpperArm_B" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(-2, -104)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 1.2
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips/Torso/UpperArm_B")
+reverse = false
+impulse_scale = 0.5
+passive_bones = Array[NodePath]([])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/UpperArm_B"]
+rotation = 1.5708
+shape = SubResource("Capsule_UpperArm_B")
+
+[node name="Forearm_B" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(-2, -77)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 1
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips/Torso/UpperArm_B/Forearm_B")
+reverse = false
+impulse_scale = 0.3
+passive_bones = Array[NodePath]([NodePath("Hips/Torso/UpperArm_B/Forearm_B/Hand_B")])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/Forearm_B"]
+rotation = 1.5708
+shape = SubResource("Capsule_Forearm_B")
+
+[node name="Thigh_F" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(2, -58)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 2.5
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips/Thigh_F")
+reverse = false
+impulse_scale = 0.55
+passive_bones = Array[NodePath]([])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/Thigh_F"]
+rotation = 1.5708
+shape = SubResource("Capsule_Thigh_F")
+
+[node name="Shin_F" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(2, -24)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 2
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips/Thigh_F/Shin_F")
+reverse = false
+impulse_scale = 0.3
+passive_bones = Array[NodePath]([NodePath("Hips/Thigh_F/Shin_F/Foot_F")])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/Shin_F"]
+rotation = 1.5708
+shape = SubResource("Capsule_Shin_F")
+
+[node name="Thigh_B" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(-2, -58)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 2.5
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips/Thigh_B")
+reverse = false
+impulse_scale = 0.55
+passive_bones = Array[NodePath]([])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/Thigh_B"]
+rotation = 1.5708
+shape = SubResource("Capsule_Thigh_B")
+
+[node name="Shin_B" type="RigidBody2D" parent="Ragdoll"]
+top_level = true
+position = Vector2(-2, -24)
+rotation = 1.5708
+collision_layer = 4
+collision_mask = 17
+mass = 2
+gravity_scale = 1
+linear_damp = 0.4
+angular_damp = 2
+freeze = true
+freeze_mode = 1
+script = ExtResource("7_ragdoll_body_2d")
+bone = NodePath("Hips/Thigh_B/Shin_B")
+reverse = false
+impulse_scale = 0.3
+passive_bones = Array[NodePath]([NodePath("Hips/Thigh_B/Shin_B/Foot_B")])
+
+[node name="Shape" type="CollisionShape2D" parent="Ragdoll/Shin_B"]
+rotation = 1.5708
+shape = SubResource("Capsule_Shin_B")
+
+[node name="J_Torso" type="PinJoint2D" parent="Ragdoll"]
+position = Vector2(0, -82)
+node_a = NodePath("../Pelvis")
+node_b = NodePath("../Torso")
+angular_limit_enabled = true
+angular_limit_lower = -0.35
+angular_limit_upper = 0.35
+softness = 0.1
+script = ExtResource("8_ragdoll_joint_2d")
+bone = NodePath("Hips/Torso")
+
+[node name="J_Head" type="PinJoint2D" parent="Ragdoll"]
+position = Vector2(0, -130)
+node_a = NodePath("../Torso")
+node_b = NodePath("../Head")
+angular_limit_enabled = true
+angular_limit_lower = -0.5
+angular_limit_upper = 0.5
+softness = 0.1
+script = ExtResource("8_ragdoll_joint_2d")
+bone = NodePath("Hips/Torso/Neck/Head")
+
+[node name="J_Shoulder_F" type="PinJoint2D" parent="Ragdoll"]
+position = Vector2(2, -118)
+node_a = NodePath("../Torso")
+node_b = NodePath("../UpperArm_F")
+angular_limit_enabled = true
+angular_limit_lower = -1.5
+angular_limit_upper = 0.6
+softness = 0.1
+script = ExtResource("8_ragdoll_joint_2d")
+bone = NodePath("Hips/Torso/UpperArm_F")
+
+[node name="J_Elbow_F" type="PinJoint2D" parent="Ragdoll"]
+position = Vector2(2, -90)
+node_a = NodePath("../UpperArm_F")
+node_b = NodePath("../Forearm_F")
+angular_limit_enabled = true
+angular_limit_lower = -1.2
+angular_limit_upper = 0
+softness = 0.1
+script = ExtResource("8_ragdoll_joint_2d")
+bone = NodePath("Hips/Torso/UpperArm_F/Forearm_F")
+
+[node name="J_Shoulder_B" type="PinJoint2D" parent="Ragdoll"]
+position = Vector2(-2, -118)
+node_a = NodePath("../Torso")
+node_b = NodePath("../UpperArm_B")
+angular_limit_enabled = true
+angular_limit_lower = -1.5
+angular_limit_upper = 0.6
+softness = 0.1
+script = ExtResource("8_ragdoll_joint_2d")
+bone = NodePath("Hips/Torso/UpperArm_B")
+
+[node name="J_Elbow_B" type="PinJoint2D" parent="Ragdoll"]
+position = Vector2(-2, -90)
+node_a = NodePath("../UpperArm_B")
+node_b = NodePath("../Forearm_B")
+angular_limit_enabled = true
+angular_limit_lower = -1.2
+angular_limit_upper = 0
+softness = 0.1
+script = ExtResource("8_ragdoll_joint_2d")
+bone = NodePath("Hips/Torso/UpperArm_B/Forearm_B")
+
+[node name="J_Hip_F" type="PinJoint2D" parent="Ragdoll"]
+position = Vector2(2, -76)
+node_a = NodePath("../Pelvis")
+node_b = NodePath("../Thigh_F")
+angular_limit_enabled = true
+angular_limit_lower = -0.9
+angular_limit_upper = 0.35
+softness = 0.1
+script = ExtResource("8_ragdoll_joint_2d")
+bone = NodePath("Hips/Thigh_F")
+
+[node name="J_Knee_F" type="PinJoint2D" parent="Ragdoll"]
+position = Vector2(2, -40)
+node_a = NodePath("../Thigh_F")
+node_b = NodePath("../Shin_F")
+angular_limit_enabled = true
+angular_limit_lower = 0
+angular_limit_upper = 1.15
+softness = 0.1
+script = ExtResource("8_ragdoll_joint_2d")
+bone = NodePath("Hips/Thigh_F/Shin_F")
+
+[node name="J_Hip_B" type="PinJoint2D" parent="Ragdoll"]
+position = Vector2(-2, -76)
+node_a = NodePath("../Pelvis")
+node_b = NodePath("../Thigh_B")
+angular_limit_enabled = true
+angular_limit_lower = -0.9
+angular_limit_upper = 0.35
+softness = 0.1
+script = ExtResource("8_ragdoll_joint_2d")
+bone = NodePath("Hips/Thigh_B")
+
+[node name="J_Knee_B" type="PinJoint2D" parent="Ragdoll"]
+position = Vector2(-2, -40)
+node_a = NodePath("../Thigh_B")
+node_b = NodePath("../Shin_B")
+angular_limit_enabled = true
+angular_limit_lower = 0
+angular_limit_upper = 1.15
+softness = 0.1
+script = ExtResource("8_ragdoll_joint_2d")
+bone = NodePath("Hips/Thigh_B/Shin_B")

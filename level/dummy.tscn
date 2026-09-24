@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxjcvk8hcyrxq"]
+
+[ext_resource type="Script" uid="uid://c4ybp1pabsvyt" path="res://level/dummy.gd" id="1_dummy"]
+[ext_resource type="PackedScene" uid="uid://leg3a0cl6qcx" path="res://character/character_rig.tscn" id="2_character_rig"]
+[ext_resource type="Resource" uid="uid://c1wof1h84w6fc" path="res://character/skins/skin_casual.tres" id="3_skin_casual"]
+
+[sub_resource type="CapsuleShape2D" id="Capsule_dummy"]
+radius = 14
+height = 160
+
+[node name="Dummy" type="CharacterBody2D" groups=["explodable", "humanoid"]]
+collision_layer = 16
+collision_mask = 1
+script = ExtResource("1_dummy")
+
+[node name="Rig" parent="." instance=ExtResource("2_character_rig")]
+skin = ExtResource("3_skin_casual")
+facing = -1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -80)
+shape = SubResource("Capsule_dummy")
+
+[node name="GroundRay" type="RayCast2D" parent="."]
+enabled = false
+target_position = Vector2(0, 240)
+collision_mask = 25

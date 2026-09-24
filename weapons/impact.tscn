@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwhvdavl0eioh"]
+
+[ext_resource type="Script" uid="uid://df3n4n5jysh4u" path="res://weapons/impact.gd" id="1_impact"]
+
+[node name="Impact" type="CPUParticles2D"]
+emitting = false
+amount = 10
+lifetime = 0.35
+one_shot = true
+explosiveness = 1
+direction = Vector2(1, 0)
+spread = 55
+gravity = Vector2(0, 600)
+initial_velocity_min = 140
+initial_velocity_max = 300
+scale_amount_min = 1.5
+scale_amount_max = 3
+color = Color(1, 0.85, 0.4, 1)
+script = ExtResource("1_impact")
